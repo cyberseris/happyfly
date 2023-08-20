@@ -473,7 +473,7 @@ $grid-breakpoints: (
 // scss-docs-start container-max-widths
 $container-max-widths: (
   // sm: 540px,
-  sm: 375px,
+  // sm: 375px,
   md: 720px,
   lg: 1320px
   // lg: 960px,
@@ -604,6 +604,7 @@ $h6-font-size:                $font-size-base !default;///16px
 $font-sizes: (
   64: $font-size-base * 4,///64px
   48: $font-size-base * 3,///32px
+  36: $font-size-base * 2.25,///36px
   32: $font-size-base * 2,///32px
   28: $font-size-base * 1.75,///28px
   24: $font-size-base * 1.5,///24px

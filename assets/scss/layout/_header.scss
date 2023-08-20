@@ -1,12 +1,42 @@
-.logo a{
-    width: 114.46px;
-    height: 48px;
-    background-image: url('../images/logo.svg');
-    text-indent: 101%;
-    overflow: hidden;
-    white-space:nowrap;
+.logo {
+    a {
+        width: 114.46px;
+        height: 48px;
+        background-image: url('../images/logo.svg');
+        text-indent: 101%;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+
 }
 
-.icon-account{
+.icon-account {
     border-radius: 50%;
+    background-color: #F7F8FA;
+    &:hover{
+        background-color: #EDF3F7;
+    }
+}
+
+.dropdown-menu {
+    top: 80px;
+    border: 0;
+    padding: 12px 0;
+
+    &.drop-1 {
+        right: 0;
+    }
+
+    &.drop-2 {
+        top: -150px;
+        right: -200px;
+    }
+
+    .dropdown-item {
+        padding: 0;
+
+        &:hover {
+            background: #EDF3F7;
+        }
+    }
 }
