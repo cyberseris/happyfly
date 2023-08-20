@@ -4,15 +4,17 @@ $utilities: () !default;
 // stylelint-disable-next-line scss/dollar-variable-default
 $utilities: map-merge(
   (
-    // "font-size": (
-    //   rfs: false,
-    //   property: font-size,
-    //   class: fs,
-    //   values: $font-sizes
-    // ),已在_variables.scss 355 行關閉
+    "font-size": (
+      rfs: false,
+      property: font-size,
+      class: fs,
+      responsive:true,
+      values: $font-sizes
+    ),
     "bg-opacity": (
       css-var: true,
       class: bg-opacity,
+      responsive:true,
       values: (
         10: .1,
         25: .25,
