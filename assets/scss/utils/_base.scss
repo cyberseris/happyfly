@@ -9,6 +9,7 @@ body {
     /*使物件依序排列*/
     flex-direction: column;
     /*使物件垂直排列*/
+    font-family: "Roboto", "Noto Sans TC", sans-serif, cursive;
 }
 
 .wrapper {
@@ -20,4 +21,17 @@ img {
     max-width: 100%;
     height: auto;
     vertical-align: middle;
+}
+
+
+h1,
+h2 {
+    font-family: "Yeseva One" !important;
+}
+
+h3,
+h4,
+h5 {
+    font-family: "Noto Serif TC" !important;
+    font-weight: 700 !important;
 }
