@@ -5,20 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>service</title>
-
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
-    <link rel="stylesheet" href="../node_modules/aos/dist/aos.css">
-
-
-
 </head>
 
 <body>
     <%- include('./layout/header'); -%>
         <div class="img-service d-flex align-items-center">
-            <h2 class="ms-28 my-20 my-md-60 ms-md-60 border-start border-dark border-5 ps-8 ps-md-16  title-service">
-                CUSTOMER SERVICE</h2>
+            <h2 class="ms-28 my-20 my-md-60 ms-md-60 border-start border-dark border-5 ps-8 ps-md-16  title-service">CUSTOMER SERVICE</h2>
         </div>
         <div class="container">
 
@@ -32,8 +26,8 @@
                     aria-expanded="false" aria-controls="buy">
                     <div class="d-flex justify-content-center align-items-center">
                         <p class="fs-24 mb-0 text-neutral-5">訂購流程</p>
-                        <span class="material-symbols-outlined fs-36 text-neutral-5">
-                            keyboard_arrow_up
+                        <span class="material-symbols-outlined text-neutral-5">
+                            keyboard_arrow_down
                         </span>
                     </div>
                 </a>
@@ -47,11 +41,11 @@
 
             <div class="row mb-24 px-12">
                 <a class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#pay" role="button"
-                    aria-expanded="false" aria-controls="pay" >
+                    aria-expanded="false" aria-controls="pay">
                     <div class="d-flex justify-content-center align-items-center">
                         <p class="fs-24 mb-0 text-neutral-5">付款方式</p>
-                        <span class="material-symbols-outlined fs-36 text-neutral-5">
-                            keyboard_arrow_up
+                        <span class="material-symbols-outlined text-neutral-5">
+                            keyboard_arrow_down
                         </span>
                     </div>
                 </a>
@@ -65,11 +59,11 @@
 
             <div class="row mb-24 px-12">
                 <a class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#member" role="button"
-                    aria-expanded="false" aria-controls="member" >
+                    aria-expanded="false" aria-controls="member">
                     <div class="d-flex justify-content-center align-items-center">
                         <p class="fs-24 mb-0 text-neutral-5 ">會員好康有哪些？</p>
-                        <span class="material-symbols-outlined fs-36 text-neutral-5">
-                            keyboard_arrow_up
+                        <span class="material-symbols-outlined text-neutral-5">
+                            keyboard_arrow_down
                         </span>
                     </div>
                 </a>
@@ -83,11 +77,11 @@
 
             <div class="row mb-24 px-12">
                 <a class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#pay-list" role="button"
-                    aria-expanded="false" aria-controls="pay-list" >
+                    aria-expanded="false" aria-controls="pay-list">
                     <div class="d-flex justify-content-center align-items-center">
                         <p class="fs-24 mb-0 text-neutral-5 ">訂單繳款的方式有哪些？</p>
-                        <span class="material-symbols-outlined fs-36 text-neutral-5">
-                            keyboard_arrow_up
+                        <span class="material-symbols-outlined text-neutral-5">
+                            keyboard_arrow_down
                         </span>
                     </div>
                 </a>
@@ -96,8 +90,7 @@
                     <div class="card card-body">
                         <p>我們提供多種方便的付款方式，以確保您能夠選擇最適合您的方式進行支付。</p>
                         <p>以下是一些常見的付款方式：</p>
-                        <p>1.信用卡/借記卡支付： 您可以使用您的信用卡或借記卡透過我們的安全支付門戶進行線上支付。我們支援 Visa、MasterCard、American Express 等主要信用卡品牌。
-                        </p>
+                        <p>1.信用卡/借記卡支付： 您可以使用您的信用卡或借記卡透過我們的安全支付門戶進行線上支付。我們支援 Visa、MasterCard、American Express 等主要信用卡品牌。</p>
                         <p>2.銀行轉帳： 如果您更喜歡通過銀行轉帳來支付，您可以選擇將費用匯款到我們提供的銀行帳戶。請注意，銀行轉帳可能需要一些時間來處理。</p>
                         <p>3.現金支付： 對於某些旅遊項目，我們也提供現場現金支付的選項。您可以在指定地點支付訂單費用。</p>
                         <p>4.預付款和分期付款： 如果您希望將付款分成幾個階段進行，我們也提供預付款和分期付款的選項，以便更好地適應您的財務需求。</p>
@@ -112,8 +105,8 @@
                     aria-expanded="false" aria-controls="cancel">
                     <div class="d-flex justify-content-center align-items-center">
                         <p class="fs-24 mb-0 text-neutral-5 ">訂購後，如果想取消或變更改行程、日期或航班，該如何處理？</p>
-                        <span class="material-symbols-outlined fs-36 text-neutral-5">
-                            keyboard_arrow_up
+                        <span class="material-symbols-outlined text-neutral-5">
+                            keyboard_arrow_down
                         </span>
                     </div>
                 </a>
@@ -136,33 +129,6 @@
         <%- include('./layout/footer'); -%>
             <script type="module" src="../main.js"></script>
             <script src="../assets/js/service.js"></script>
-
-            <script src="../node_modules/aos/dist/aos.js"></script>
-            <script>
-                AOS.init();
-            // AOS.init({
-            //         // Global settings:
-            //         disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
-            //         startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
-            //         initClassName: 'aos-init', // class applied after initialization
-            //         animatedClassName: 'aos-animate', // class applied on animation
-            //         useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
-            //         disableMutationObserver: false, // disables automatic mutations' detections (advanced)
-            //         debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
-            //         throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
-
-
-            //         // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
-            //         offset: 120, // offset (in px) from the original trigger point
-            //         delay: 0, // values from 0 to 3000, with step 50ms
-            //         duration: 400, // values from 0 to 3000, with step 50ms
-            //         easing: 'ease', // default easing for AOS animations
-            //         once: false, // whether animation should happen only once - while scrolling down
-            //         mirror: false, // whether elements should animate out while scrolling past them
-            //         anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
-
-            //     });
-                </script>
 
 </body>
 

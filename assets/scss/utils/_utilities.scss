@@ -1,29 +1,23 @@
 // Utilities
 
-$utilities: () !default;
+$utilities: (
+  ) !default;
 // stylelint-disable-next-line scss/dollar-variable-default
-$utilities: map-merge(
-  (
-    "font-size": (
-      rfs: false,
-      property: font-size,
-      class: fs,
-      responsive:true,
-      values: $font-sizes
-    ),
-    "bg-opacity": (
-      css-var: true,
-      class: bg-opacity,
-      responsive:true,
-      values: (
-        10: .1,
-        25: .25,
-        30:.3,
-        50: .5,
-        75: .75,
-        100: 1
-      )
-    )
-  ),
-  $utilities
+$utilities: map-merge(("font-size": (rfs: false,
+        property: font-size,
+        class: fs,
+        values: $font-sizes ),
+      "bg-opacity": (css-var: true,
+        class: bg-opacity,
+        values: (10: .1,
+          25: .25,
+          30:.3,
+          50: .5,
+          75: .75,
+          100: 1))),
+    $utilities
 );
+
+.shadow-style {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}

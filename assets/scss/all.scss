@@ -1,22 +1,32 @@
 @import 'https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap';
 @import 'https://fonts.googleapis.com/css?family=Material+Icons%7CMaterial+Icons+Outlined%7CMaterial+Icons+Two+Tone%7CMaterial+Icons+Round%7CMaterial+Icons+Sharp';
 
-@import 'animate.css/animate.css';
-
 @import "../../node_modules/bootstrap/scss/functions";
 @import './utils/variables';
 @import './utils/utilities';
 @import './utils/base';
+@import './utils/mixin';
+@import './base/reset';
 @import "../../node_modules/bootstrap";
 
+
+@import './components/table';
+
 @import './layout/header';
+@import './layout/background';
+@import './layout/sideBar';
 @import './layout/footer';
+@import './layout/memberBanner';
+
+
 @import './pages/index';
 @import './pages/login';
 @import './pages/pwdForgot';
 @import './pages/service';
 @import './pages/about';
-@import './pages/register';
+@import './pages/member';
+@import './pages/paymentInfo';
+@import './pages/history';
+
 
 @import './pages/modal'
-

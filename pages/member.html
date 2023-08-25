@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>會員中心</title>
+    <%- include('./layout/headLink'); -%>
+    <script type="module" src="../main.js"></script>
+</head>
+<body>
+    <%- include('./layout/header') -%>
+
+    <div class="img-member d-flex align-items-center">
+        <h2 class="ms-28 my-20 my-md-60 ms-md-60 border-start border-dark border-5 ps-8 ps-md-16  title-member">會員中心</h2>
+    </div>
+
+    <section class="member vh-100">
+        <div class="container">
+            
+            <div class="d-flex">
+                <div>
+                    <%- include('./layout/sideBar') -%>
+                </div>
+
+                <div class="w-100 d-flex flex-column justify-content-center align-items-center">
+                    <div class="memberInfo row w-50 ">
+                        <h1 class="fs-32 mb-24 pb-24 mt-32 w-100 text-center">會員中心</h1>
+                        <div>
+                            <table class="table fs-16 w-100 w-md-50">
+                                <tbody>
+                                    <tr><td class="text-end">帳號</td><td>happyfly</td></tr>
+                                    <tr><td class="text-end">中文姓名</td><td>六角學院學員</td></tr>
+                                    <tr><td class="text-end">英文姓名</td><td>hexschool student</td></tr>
+                                    <tr><td class="text-end">性別</td><td>男/女</td></tr>
+                                    <tr><td class="text-end">出生日</td><td>2023/07/07</td></tr>
+                                    <tr><td class="text-end">地址</td><td>高雄市新興區 X 路 X 號 21樓</td></tr>
+                                    <tr><td class="text-end">PHONE</td><td>09XX-XXX-XXX</td></tr>
+                                    <tr><td class="text-end">MAIL</td><td>hexschool@test.com</td></tr>
+                                    <tr><td class="text-end">飲食限制</td><td>葷素皆可</td></tr>
+                                    <tr><td class="text-end">緊急聯絡姓名</td><td>hexschool</td></tr>
+                                    <tr><td class="text-end">緊急聯絡電話</td><td>09XX-XXX-XXX</td></tr>
+                                    <tr><td class="text-end">緊急聯絡關係</td><td>魔法師門徒</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+           
+        </div>
+    </section>
+
+    <%- include('./layout/footer'); -%>
+</body>
+</html>
