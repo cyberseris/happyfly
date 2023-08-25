@@ -1,0 +1,15 @@
+.gift{
+    background-image: url('../images/gift.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.input-container {
+    position: relative;
+  }
+.icon {
+    position: absolute;
+    top: 30%;
+    right: 5%;
+    transform: translateY(-50%);
+  }
