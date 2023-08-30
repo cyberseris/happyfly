@@ -1,0 +1,12 @@
+.bg-left-imageFocus01 {
+    background-image: url("../images/imageFocus01.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height:100%;
+    min-height: 200px;
+
+    @include pad() {
+        background-image: url("../images/imageFocus01.png");
+    }
+}

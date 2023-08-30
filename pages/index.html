@@ -1,17 +1,826 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>index</title>
-  </head>
-  <body>
-    <%- include('./layout/header'); -%>
 
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>index</title>
+  <script type="text/javascript" src="../node_modules/jquery/dist/jquery.min.js"></script>
+  <script type="text/javascript" src="../node_modules/daterangepicker/moment.min.js"></script>
+  <script type="text/javascript" src="../node_modules/daterangepicker/daterangepicker.js"></script>
+  <script src="../assets/scss/vendors/daterangepicker/index_date.js"></script>
+</head>
+
+<body>
+  <%- include('./layout/header'); -%>
+
+    <main>
+      <!-- banner&search -->
+      <section class="position-relative text-center bg-banner-img h-vh-80">
+        <!-- banner-text -->
+        <div class="text-white position-absolute top-50 start-50  translate-middle w-100">
+          <h1 class="fs-48 text-shadow-1">日韓一路玩到底</h1>
+          <h2 class="fs-32 text-shadow-1">早鳥優惠 5 折</h2>
+          <div class="d-flex justify-content-center align-items-center">
+            <button type="button" class="btn btn-primary rounded-pill fs-20 text-white py-16 px-24">加入會員
+              <img src="../assets/images/iconArrowRight.svg" alt="iconArrowRight"
+                class="bg-white rounded-circle ms-12 w-px-20 h-px-20">
+            </button>
+          </div>
+        </div>
+
+        <!-- search -->
+        <div
+          class="d-flex flex-column flex-md-row justify-content-between align-items-stetch position-absolute shadow-sm bg-white top-100 start-50 translate-middle rounded-4 max-custom-width w-custom-sm-90 w-custom-90 px-12 px-md-36 py-12 py-md-36">
+          <!-- site -->
+          <div class="w-custom-150 w-custom-sm-100 d-flex justify-content-between align-items-center js-list">
+
+            <!-- 出發地 -->
+            <div class=" form-floating w-custom-50 me-12 me-md-24">
+              <input type="text" class="form-control input-bg-down" id="outset" placeholder="請選擇" value="請選擇">
+              <label for="outset" class="text-dark ">出發地</label>
+
+              <div class="position-relative input-bg-down-content js-content w-custom-150 w-custom-sm-100" data-target="outset">
+                <div class="position-absolute bg-white border border-1 rounded p-16">
+                  <ul class="nav nav-pills  nav-tab-border tabs-hover mb-16" id="pills-tab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link active" id="pills-1-tab" data-bs-toggle="pill" data-bs-target="#pills-1"
+                        type="button" role="tab" aria-controls="pills-1" aria-selected="true">國外旅遊</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="pills-2-tab" data-bs-toggle="pill" data-bs-target="#pills-2"
+                        type="button" role="tab" aria-controls="pills-2" aria-selected="false">國內旅遊</button>
+                    </li>
+                  </ul>
+                  <div class="tab-content bg-primary-3 rounded p-24" id="pills-tabContent">
+                    <div class="tab-pane fade show active" id="pills-1" role="tabpanel" aria-labelledby="pills-1-tab">
+                      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4">
+                        <div class="col">
+                          <p data-val="港澳中國" class="js-val">港澳中國</p>
+                        </div>
+                        <div class="col">
+                          <p data-val="東北亞" class="js-val">東北亞</p>
+                        </div>
+                        <div class="col">
+                          <p data-val="東南亞" class="js-val">東南亞</p>
+                        </div>
+                        <div class="col">
+                          <p data-val="美加" class="js-val">美加</p>
+                        </div>
+                        <div class="col">
+                          <p data-val="紐澳" class="js-val">紐澳</p>
+                        </div>
+                        <div class="col">
+                          <p data-val="歐洲" class="js-val">歐洲</p>
+                        </div>
+                        <div class="col">
+                          <p data-val="其他城市" class="js-val">其他城市</p>
+                        </div>
+
+                      </div>
+                    </div>
+                    <div class="col tab-pane fade" id="pills-2" role="tabpanel" aria-labelledby="pills-2-tab">
+                      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4">
+                        <div class="col">
+                          <p>台北</p>
+                        </div>
+                        <div class="col">
+                          <p>台中</p>
+                        </div>
+                        <div class="col">
+                          <p>台南</p>
+                        </div>
+                        <div class="col">
+                          <p>高雄</p>
+                        </div>
+                        <div class="col">
+                          <p>苗栗</p>
+                        </div>
+                        <div class="col">
+                          <p>屏東</p>
+                        </div>
+                        <div class="col">
+                          <p>桃園</p>
+                        </div>
+                        <div class="col">
+                          <p>新竹</p>
+                        </div>
+                        <div class="col">
+                          <p>宜蘭</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <!--目的地  -->
+            <div class="form-floating w-custom-50 me-0 me-md-24">
+              <input type="text" class="form-control input-bg-down" placeholder="請選擇" value="請選擇" id="destination">
+              <label for="destination" class="text-dark">目的地
+              </label>
+
+              <div class="position-relative input-bg-down-content js-content w-custom-150 w-custom-sm-100" data-target="destination">
+                <div class="position-absolute bg-white border border-1 rounded p-16">
+                  <ul class="nav nav-pills  nav-tab-border tabs-hover mb-16" id="pills-tab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link active" id="pills-1-tab" data-bs-toggle="pill" data-bs-target="#pills-1"
+                        type="button" role="tab" aria-controls="pills-1" aria-selected="true">國外旅遊</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="pills-2-tab" data-bs-toggle="pill" data-bs-target="#pills-2"
+                        type="button" role="tab" aria-controls="pills-2" aria-selected="false">國內旅遊</button>
+                    </li>
+                  </ul>
+                  <div class="tab-content bg-primary-3 rounded p-24" id="pills-tabContent">
+                    <div class="tab-pane fade show active" id="pills-1" role="tabpanel" aria-labelledby="pills-1-tab">
+                      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4">
+                        <div class="col">
+                          <p data-val="港澳中國" class="js-val">港澳中國</p>
+                        </div>
+                        <div class="col">
+                          <p data-val="東北亞" class="js-val">東北亞</p>
+                        </div>
+                        <div class="col">
+                          <p data-val="東南亞" class="js-val">東南亞</p>
+                        </div>
+                        <div class="col">
+                          <p data-val="美加" class="js-val">美加</p>
+                        </div>
+                        <div class="col">
+                          <p data-val="紐澳" class="js-val">紐澳</p>
+                        </div>
+                        <div class="col">
+                          <p data-val="歐洲" class="js-val">歐洲</p>
+                        </div>
+                        <div class="col">
+                          <p data-val="其他城市" class="js-val">其他城市</p>
+                        </div>
+
+                      </div>
+                    </div>
+                    <div class="col tab-pane fade" id="pills-2" role="tabpanel" aria-labelledby="pills-2-tab">
+                      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4">
+                        <div class="col">
+                          <p>台北</p>
+                        </div>
+                        <div class="col">
+                          <p>台中</p>
+                        </div>
+                        <div class="col">
+                          <p>台南</p>
+                        </div>
+                        <div class="col">
+                          <p>高雄</p>
+                        </div>
+                        <div class="col">
+                          <p>苗栗</p>
+                        </div>
+                        <div class="col">
+                          <p>屏東</p>
+                        </div>
+                        <div class="col">
+                          <p>桃園</p>
+                        </div>
+                        <div class="col">
+                          <p>新竹</p>
+                        </div>
+                        <div class="col">
+                          <p>宜蘭</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- date -->
+          <div class="form-floating w-100 mt-12 mt-md-0 me-0 me-md-24">
+            <input type="text" class="btn-search form-control text-start input-bg-img " id="interval" placeholder="請選擇"
+              value="請選擇" name="datefilter">
+            <label for="interval" class="text-dark">出發區間</label>
+          </div>
+
+          <!--search btn -->
+          <a type="button"
+            class="btn btn-primary-3 rounded btn-hover d-flex align-items-center justify-content-center bg-primary-3 mt-12 mt-md-0"
+            href="searchResult.html">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+              class="w-px-26">
+              <g class="svg_27_122">
+                <path
+                  d="M9.5 16C7.68333 16 6.14583 15.3708 4.8875 14.1125C3.62917 12.8542 3 11.3167 3 9.5C3 7.68333 3.62917 6.14583 4.8875 4.8875C6.14583 3.62917 7.68333 3 9.5 3C11.3167 3 12.8542 3.62917 14.1125 4.8875C15.3708 6.14583 16 7.68333 16 9.5C16 10.2333 15.8833 10.925 15.65 11.575C15.4167 12.225 15.1 12.8 14.7 13.3L20.3 18.9C20.4833 19.0833 20.575 19.3167 20.575 19.6C20.575 19.8833 20.4833 20.1167 20.3 20.3C20.1167 20.4833 19.8833 20.575 19.6 20.575C19.3167 20.575 19.0833 20.4833 18.9 20.3L13.3 14.7C12.8 15.1 12.225 15.4167 11.575 15.65C10.925 15.8833 10.2333 16 9.5 16ZM9.5 14C10.75 14 11.8125 13.5625 12.6875 12.6875C13.5625 11.8125 14 10.75 14 9.5C14 8.25 13.5625 7.1875 12.6875 6.3125C11.8125 5.4375 10.75 5 9.5 5C8.25 5 7.1875 5.4375 6.3125 6.3125C5.4375 7.1875 5 8.25 5 9.5C5 10.75 5.4375 11.8125 6.3125 12.6875C7.1875 13.5625 8.25 14 9.5 14Z" />
+              </g>
+            </svg>
+          </a>
+
+        </div>
+      </section>
+
+      <!-- 焦點 -->
+      <section class="d-flex justify-content-center align-items-stetch bg-left-linear pb-108 pt-172">
+        <div class="container">
+          <div class="row g-4">
+            <!-- title -->
+            <div class="col-sm-1 col-lg-1">
+              <h2 class="fs-32 fw-bold writing-vertical">
+                <span class="text-primary">●</span>
+                焦點話題
+              </h2>
+            </div>
+            <!-- left -->
+            <div class="col-sm-1 col-lg-6 ">
+              <div
+                class="text-white d-flex flex-column flex-md-row justify-content-end justify-content-md-between align-items-start align-items-md-end h-100 p-32 left-bg-img rounded">
+                <div>
+                  <h3 class="fs-28 fw-sm-20">普吉悅槤酒店</h3>
+                  <h3 class="fs-24 fw-sm-16">4 天直飛普吉島</h3>
+                </div>
+                <div>
+                  <h5 class="fs-20 fw-sm-16 fw-med f-sans"><span class="text-orange me-4">NT$ 19,900</span>起</h5>
+                </div>
+              </div>
+            </div>
+            <!-- right -->
+            <div class="col-sm-1 col-lg-5">
+              <div class="row g-3">
+                <!-- top -->
+                <div class="col-6 col-md-5">
+
+                  <img src="../assets/images/imageFocus02.png" class="img-fluid rounded" alt="imageFocus02 ">
+
+                </div>
+                <div class="col-6 col-md-7">
+
+                  <h4 class="fs-24 fw-sm-20">輕鬆遊曼谷五日</h4>
+                  <h5 class="fs-20 fw-sm-16">海上郵輪餐廳釣墨魚</h5>
+                  <h5 class="fs-20 fw-sm-16 fw-med f-sans text-neutral-2"><span class="text-orange me-4">NT$
+                      34,900</span>起</h5>
+
+                </div>
+                <!-- middle -->
+                <div class="col-6 col-md-5">
+
+                  <img src="../assets/images/imageFocus03.png" class="img-fluid rounded" alt="imageFocus03 ">
+
+                </div>
+                <div class="col-6 col-md-7">
+
+                  <h4 class="fs-24 fw-sm-20">峇里風情六人成行</h4>
+                  <h5 class="fs-20 fw-sm-16">烏布閒情旅行、山林田野泛舟</h5>
+                  <h5 class="fs-20 fw-sm-16 fw-med f-sans text-neutral-2"><span class="text-orange me-4">NT$
+                      23,900</span>起</h5>
+
+                </div>
+                <!-- bottom -->
+                <div class="col-6 col-md-5">
+
+                  <img src="../assets/images/imageFocus04.png" class="img-fluid rounded" alt="imageFocus04 ">
+
+                </div>
+                <div class="col-6 col-md-7">
+
+                  <h4 class="fs-24 fw-sm-20">芬蘭極光十日</h4>
+                  <h5 class="fs-20 fw-sm-16 ">極地捕撈帝王蟹大餐體驗</p>
+                    <h5 class="fs-20 fw-sm-16 fw-med f-sans text-neutral-2"><span class="text-orange me-4">NT$
+                        88,000</span>起</h5>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 全球走透透 -->
+      <section class="d-flex justify-content-center align-items-stetch mt-96">
+        <div class="container">
+          <div class="d-flex flex-column flex-md-row justify-content-between align-items-center">
+            <!-- title -->
+            <h2 class="fs-32 fw-bold">
+              <span class="text-primary">●</span>
+              全球走透透
+            </h2>
+            <!-- btn-tabs -->
+            <ul class="nav nav-pills  nav-tab-border tabs-hover" id="pills-tab" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home"
+                  type="button" role="tab" aria-controls="pills-home" aria-selected="true">國外旅遊</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile"
+                  type="button" role="tab" aria-controls="pills-profile" aria-selected="false">國內旅遊</button>
+              </li>
+            </ul>
+            <!-- btn-more -->
+            <button type="button"
+              class="d-none d-lg-inline-block btn bg-primary-3 btn-hover1 rounded-pill fs-20 text-white py-16 px-24 ">查看更多
+              <img src="../assets/images/iconArrowRight.svg" alt="iconArrowRight"
+                class="bg-white rounded-circle ms-12 w-px-20 h-px-20">
+            </button>
+          </div>
+
+          <!-- tabs -->
+          <div class="tab-content pt-60" id="pills-tabContent">
+
+            <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+
+              <!-- content -->
+              <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 g-4 slick-carousel">
+                <div class="col">
+                  <div class="card border border-1 h-100">
+                    <img src="../assets/images/image01.png" class="card-img-top" alt="image01">
+                    <div class="card-body">
+                      <h5 class="card-title">賽福瑞六人成行</h5>
+                      <p class="card-text">安帕瓦螢火蟲五日</p>
+                    </div>
+                    <div class="card-footer border-0">
+                      <button type="button" class="btn btn-outline-orange w-100">NT$20,900 起
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card border border-1 h-100">
+                    <img src="../assets/images/image02.png" class="card-img-top" alt="image02">
+                    <div class="card-body">
+                      <h5 class="card-title">美麗海水族館.波上宮4日</h5>
+                      <p class="card-text">贈送半潛水艇</p>
+                    </div>
+                    <div class="card-footer border-0">
+                      <button type="button" class="btn btn-outline-orange w-100">NT$24,900 起
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col  d-none d-lg-flex">
+                  <div class="card border border-1 h-100">
+                    <img src="../assets/images/image03.png" class="card-img-top" alt="image03">
+                    <div class="card-body">
+                      <h5 class="card-title">艾菲爾鐵塔景觀餐廳8日</h5>
+                      <p class="card-text">周杰倫 MV 莎瑪麗丹百貨</p>
+                    </div>
+                    <div class="card-footer border-0">
+                      <button type="button" class="btn btn-outline-orange w-100">NT$57,900 起
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col  d-none d-lg-flex">
+                  <div class="card border border-1 h-100">
+                    <img src="../assets/images/image04.png" class="card-img-top" alt="image04">
+                    <div class="card-body">
+                      <h5 class="card-title">五星中越峴港</h5>
+                      <p class="card-text">會安古鎮美山聖地</p>
+                    </div>
+                    <div class="card-footer border-0">
+                      <button type="button" class="btn btn-outline-orange w-100">NT$29,999 起
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="d-flex d-md-none justify-content-center align-content-center mt-24">
+                <span class="w-px-8 h-px-8 bg-primary m-4 rounded"></span>
+                <span class="w-px-8 h-px-8 border border-primary m-4 rounded"></span>
+              </div>
+
+            </div>
+            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+
+              <!-- content -->
+              <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 g-4 slick-carousel">
+                <div class="col">
+                  <div class="card border border-1 h-100">
+                    <img src="../assets/images/image05.png" class="card-img-top" alt="image05">
+                    <div class="card-body">
+                      <h5 class="card-title">賽福瑞六人成行</h5>
+                      <p class="card-text">安帕瓦螢火蟲五日</p>
+                    </div>
+                    <div class="card-footer border-0">
+                      <button type="button" class="btn btn-outline-orange w-100">NT$20,900 起
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card border border-1 h-100">
+                    <img src="../assets/images/image06.png" class="card-img-top" alt="image06">
+                    <div class="card-body">
+                      <h5 class="card-title">美麗海水族館.波上宮4日</h5>
+                      <p class="card-text">贈送半潛水艇</p>
+                    </div>
+                    <div class="card-footer border-0">
+                      <button type="button" class="btn btn-outline-orange w-100">NT$24,900 起
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col  d-none d-lg-flex">
+                  <div class="card border border-1 h-100">
+                    <img src="../assets/images/image07.png" class="card-img-top" alt="image07">
+                    <div class="card-body">
+                      <h5 class="card-title">艾菲爾鐵塔景觀餐廳8日</h5>
+                      <p class="card-text">周杰倫 MV 莎瑪麗丹百貨</p>
+                    </div>
+                    <div class="card-footer border-0">
+                      <button type="button" class="btn btn-outline-orange w-100">NT$57,900 起
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col  d-none d-lg-flex">
+                  <div class="card border border-1 h-100">
+                    <img src="../assets/images/image08.png" class="card-img-top" alt="image08">
+                    <div class="card-body">
+                      <h5 class="card-title">五星中越峴港</h5>
+                      <p class="card-text">會安古鎮美山聖地</p>
+                    </div>
+                    <div class="card-footer border-0">
+                      <button type="button" class="btn btn-outline-orange w-100">NT$29,999 起
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="d-flex d-md-none justify-content-center align-content-center mt-24">
+                <span class="w-px-8 h-px-8 bg-primary m-4 rounded"></span>
+                <span class="w-px-8 h-px-8 border border-primary m-4 rounded"></span>
+              </div>
+
+            </div>
+
+          </div>
+
+          <!-- btn-more -->
+          <div class="d-flex d-lg-none justify-content-center align-items-center ">
+            <button type="button"
+              class="btn bg-primary-3 btn-hover1 rounded-pill fs-20 text-white py-16 px-24  mt-24">查看更多
+              <img src="../assets/images/iconArrowRight.svg" alt="iconArrowRight"
+                class="bg-white rounded-circle ms-12 w-px-20 h-px-20">
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- 主題旅遊 -->
+      <section class="d-flex justify-content-center align-items-stetch mt-96">
+        <div class="container">
+          <div class="d-flex flex-column flex-md-row justify-content-between align-items-center">
+            <!-- title -->
+            <h2 class="fs-32 fw-bold">
+              <span class="text-primary">●</span>
+              主題旅遊
+            </h2>
+            <!-- btn-tabs -->
+            <ul class="nav nav-pills  nav-tab-border tabs-hover" id="pills-tab" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home1"
+                  type="button" role="tab" aria-controls="pills-home" aria-selected="true">國外旅遊</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile1"
+                  type="button" role="tab" aria-controls="pills-profile" aria-selected="false">國內旅遊</button>
+              </li>
+            </ul>
+            <!-- btn-more -->
+            <button type="button"
+              class="d-none d-lg-inline-block btn bg-primary-3 btn-hover1 rounded-pill fs-20 text-white py-16 px-24 ">查看更多
+              <img src="../assets/images/iconArrowRight.svg" alt="iconArrowRight"
+                class="bg-white rounded-circle ms-12 w-px-20 h-px-20">
+            </button>
+          </div>
+
+          <!-- tabs -->
+          <div class="tab-content pt-60" id="pills-tabContent">
+
+            <div class="tab-pane fade show active" id="pills-home1" role="tabpanel" aria-labelledby="pills-home-tab">
+
+              <!-- content -->
+              <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 g-4 slick-carousel">
+                <div class="col">
+                  <div class="card border border-1 h-100">
+                    <img src="../assets/images/image05.png" class="card-img-top" alt="image05">
+                    <div class="card-body">
+                      <h5 class="card-title">賽福瑞六人成行</h5>
+                      <p class="card-text">安帕瓦螢火蟲五日</p>
+                    </div>
+                    <div class="card-footer border-0">
+                      <button type="button" class="btn btn-outline-orange w-100">NT$20,900 起
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card border border-1 h-100">
+                    <img src="../assets/images/image06.png" class="card-img-top" alt="image06">
+                    <div class="card-body">
+                      <h5 class="card-title">美麗海水族館.波上宮4日</h5>
+                      <p class="card-text">贈送半潛水艇</p>
+                    </div>
+                    <div class="card-footer border-0">
+                      <button type="button" class="btn btn-outline-orange w-100">NT$24,900 起
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col  d-none d-lg-flex">
+                  <div class="card border border-1 h-100">
+                    <img src="../assets/images/image07.png" class="card-img-top" alt="image07">
+                    <div class="card-body">
+                      <h5 class="card-title">艾菲爾鐵塔景觀餐廳8日</h5>
+                      <p class="card-text">周杰倫 MV 莎瑪麗丹百貨</p>
+                    </div>
+                    <div class="card-footer border-0">
+                      <button type="button" class="btn btn-outline-orange w-100">NT$57,900 起
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col  d-none d-lg-flex">
+                  <div class="card border border-1 h-100">
+                    <img src="../assets/images/image08.png" class="card-img-top" alt="image08">
+                    <div class="card-body">
+                      <h5 class="card-title">五星中越峴港</h5>
+                      <p class="card-text">會安古鎮美山聖地</p>
+                    </div>
+                    <div class="card-footer border-0">
+                      <button type="button" class="btn btn-outline-orange w-100">NT$29,999 起
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="d-flex d-md-none justify-content-center align-content-center mt-24">
+                <span class="w-px-8 h-px-8 bg-primary m-4 rounded"></span>
+                <span class="w-px-8 h-px-8 border border-primary m-4 rounded"></span>
+              </div>
+
+            </div>
+            <div class="tab-pane fade" id="pills-profile1" role="tabpanel" aria-labelledby="pills-profile-tab">
+
+              <!-- content -->
+              <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 g-4 slick-carousel">
+                <div class="col">
+                  <div class="card border border-1 h-100">
+                    <img src="../assets/images/image01.png" class="card-img-top" alt="image01">
+                    <div class="card-body">
+                      <h5 class="card-title">賽福瑞六人成行</h5>
+                      <p class="card-text">安帕瓦螢火蟲五日</p>
+                    </div>
+                    <div class="card-footer border-0">
+                      <button type="button" class="btn btn-outline-orange w-100">NT$20,900 起
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card border border-1 h-100">
+                    <img src="../assets/images/image02.png" class="card-img-top" alt="image02">
+                    <div class="card-body">
+                      <h5 class="card-title">美麗海水族館.波上宮4日</h5>
+                      <p class="card-text">贈送半潛水艇</p>
+                    </div>
+                    <div class="card-footer border-0">
+                      <button type="button" class="btn btn-outline-orange w-100">NT$24,900 起
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col d-none d-lg-flex">
+                  <div class="card border border-1 h-100">
+                    <img src="../assets/images/image03.png" class="card-img-top" alt="image03">
+                    <div class="card-body">
+                      <h5 class="card-title">艾菲爾鐵塔景觀餐廳8日</h5>
+                      <p class="card-text">周杰倫 MV 莎瑪麗丹百貨</p>
+                    </div>
+                    <div class="card-footer border-0">
+                      <button type="button" class="btn btn-outline-orange w-100">NT$57,900 起
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col d-none d-lg-flex">
+                  <div class="card border border-1 h-100">
+                    <img src="../assets/images/image04.png" class="card-img-top" alt="image04">
+                    <div class="card-body">
+                      <h5 class="card-title">五星中越峴港</h5>
+                      <p class="card-text">會安古鎮美山聖地</p>
+                    </div>
+                    <div class="card-footer border-0">
+                      <button type="button" class="btn btn-outline-orange w-100">NT$29,999 起
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="d-flex d-md-none justify-content-center align-content-center mt-24">
+                <span class="w-px-8 h-px-8 bg-primary m-4 rounded"></span>
+                <span class="w-px-8 h-px-8 border border-primary m-4 rounded"></span>
+              </div>
+
+            </div>
+
+          </div>
+
+          <!-- btn-more -->
+          <div class="d-flex d-lg-none justify-content-center align-items-center ">
+            <button type="button"
+              class="btn bg-primary-3 btn-hover1 rounded-pill fs-20 text-white py-16 px-24  mt-24">查看更多
+              <img src="../assets/images/iconArrowRight.svg" alt="iconArrowRight"
+                class="bg-white rounded-circle ms-12 w-px-20 h-px-20">
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- 限時優惠 -->
+      <section class="d-flex justify-content-center align-items-stetch mt-96 pb-108 bg-right-linear">
+        <div class="container">
+          <div class="d-flex flex-column flex-md-row justify-content-between align-items-center">
+            <!-- title -->
+            <h2 class="fs-32 fw-bold">
+              <span class="text-primary">●</span>
+              限時優惠
+            </h2>
+            <!-- btn-tabs -->
+            <ul class="nav nav-pills  nav-tab-border tabs-hover" id="pills-tab" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home2"
+                  type="button" role="tab" aria-controls="pills-home" aria-selected="true">國外旅遊</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile2"
+                  type="button" role="tab" aria-controls="pills-profile" aria-selected="false">國內旅遊</button>
+              </li>
+            </ul>
+            <!-- btn-more -->
+            <button type="button"
+              class="d-none d-lg-inline-block btn bg-primary-3 btn-hover1 rounded-pill fs-20 text-white py-16 px-24 ">查看更多
+              <img src="../assets/images/iconArrowRight.svg" alt="iconArrowRight"
+                class="bg-white rounded-circle ms-12 w-px-20 h-px-20">
+            </button>
+          </div>
+
+          <!-- tabs -->
+          <div class="tab-content pt-60" id="pills-tabContent">
+
+            <div class="tab-pane fade show active" id="pills-home2" role="tabpanel" aria-labelledby="pills-home-tab">
+
+              <!-- content -->
+              <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 g-4 slick-carousel">
+                <div class="col">
+                  <div class="card border border-1 h-100">
+                    <img src="../assets/images/image09.png" class="card-img-top" alt="image09">
+                    <div class="card-body">
+                      <h5 class="card-title">賽福瑞六人成行</h5>
+                      <p class="card-text">安帕瓦螢火蟲五日</p>
+                    </div>
+                    <div class="card-footer border-0">
+                      <button type="button" class="btn btn-outline-orange w-100">NT$20,900 起
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card border border-1 h-100">
+                    <img src="../assets/images/image10.png" class="card-img-top" alt="image10">
+                    <div class="card-body">
+                      <h5 class="card-title">美麗海水族館.波上宮4日</h5>
+                      <p class="card-text">贈送半潛水艇</p>
+                    </div>
+                    <div class="card-footer border-0">
+                      <button type="button" class="btn btn-outline-orange w-100">NT$24,900 起
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col  d-none d-lg-flex">
+                  <div class="card border border-1 h-100">
+                    <img src="../assets/images/image11.png" class="card-img-top" alt="image11">
+                    <div class="card-body">
+                      <h5 class="card-title">艾菲爾鐵塔景觀餐廳8日</h5>
+                      <p class="card-text">周杰倫 MV 莎瑪麗丹百貨</p>
+                    </div>
+                    <div class="card-footer border-0">
+                      <button type="button" class="btn btn-outline-orange w-100">NT$57,900 起
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col  d-none d-lg-flex">
+                  <div class="card border border-1 h-100">
+                    <img src="../assets/images/image12.png" class="card-img-top" alt="image12">
+                    <div class="card-body">
+                      <h5 class="card-title">五星中越峴港</h5>
+                      <p class="card-text">會安古鎮美山聖地</p>
+                    </div>
+                    <div class="card-footer border-0">
+                      <button type="button" class="btn btn-outline-orange w-100">NT$29,999 起
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="d-flex d-md-none justify-content-center align-content-center mt-24">
+                <span class="w-px-8 h-px-8 bg-primary m-4 rounded"></span>
+                <span class="w-px-8 h-px-8 border border-primary m-4 rounded"></span>
+              </div>
+
+            </div>
+            <div class="tab-pane fade" id="pills-profile2" role="tabpanel" aria-labelledby="pills-profile-tab">
+
+              <!-- content -->
+              <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 g-4 slick-carousel">
+                <div class="col">
+                  <div class="card border border-1 h-100">
+                    <img src="../assets/images/image01.png" class="card-img-top" alt="image01">
+                    <div class="card-body">
+                      <h5 class="card-title">賽福瑞六人成行</h5>
+                      <p class="card-text">安帕瓦螢火蟲五日</p>
+                    </div>
+                    <div class="card-footer border-0">
+                      <button type="button" class="btn btn-outline-orange w-100">NT$20,900 起
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card border border-1 h-100">
+                    <img src="../assets/images/image02.png" class="card-img-top" alt="image02">
+                    <div class="card-body">
+                      <h5 class="card-title">美麗海水族館.波上宮4日</h5>
+                      <p class="card-text">贈送半潛水艇</p>
+                    </div>
+                    <div class="card-footer border-0">
+                      <button type="button" class="btn btn-outline-orange w-100">NT$24,900 起
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col d-none d-lg-flex">
+                  <div class="card border border-1 h-100">
+                    <img src="../assets/images/image03.png" class="card-img-top" alt="image03">
+                    <div class="card-body">
+                      <h5 class="card-title">艾菲爾鐵塔景觀餐廳8日</h5>
+                      <p class="card-text">周杰倫 MV 莎瑪麗丹百貨</p>
+                    </div>
+                    <div class="card-footer border-0">
+                      <button type="button" class="btn btn-outline-orange w-100">NT$57,900 起
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col d-none d-lg-flex">
+                  <div class="card border border-1 h-100">
+                    <img src="../assets/images/image04.png" class="card-img-top" alt="image04">
+                    <div class="card-body">
+                      <h5 class="card-title">五星中越峴港</h5>
+                      <p class="card-text">會安古鎮美山聖地</p>
+                    </div>
+                    <div class="card-footer border-0">
+                      <button type="button" class="btn btn-outline-orange w-100">NT$29,999 起
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="d-flex d-md-none justify-content-center align-content-center mt-24">
+                <span class="w-px-8 h-px-8 bg-primary m-4 rounded"></span>
+                <span class="w-px-8 h-px-8 border border-primary m-4 rounded"></span>
+              </div>
+
+            </div>
+
+          </div>
+
+          <!-- btn-more -->
+          <div class="d-flex d-lg-none justify-content-center align-items-center ">
+            <button type="button"
+              class="btn bg-primary-3 btn-hover1 rounded-pill fs-20 text-white py-16 px-24  mt-24">查看更多
+              <img src="../assets/images/iconArrowRight.svg" alt="iconArrowRight"
+                class="bg-white rounded-circle ms-12 w-px-20 h-px-20">
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
 
     <%- include('./layout/footer'); -%>
+      <script type="module" src="../main.js"></script>
+      <script src="../assets/js/index.js"></script>
+</body>
 
-    <script type="module" src="../main.js"></script>
-  </body>
 </html>

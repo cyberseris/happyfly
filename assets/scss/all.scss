@@ -9,8 +9,10 @@
 @import './base/reset';
 @import "../../node_modules/bootstrap";
 
-
 @import './components/table';
+
+
+@import './utils/helpers';
 
 @import './layout/header';
 @import './layout/background';
@@ -19,7 +21,10 @@
 @import './layout/memberBanner';
 
 
-@import './pages/index';
+@import './pages/index'; //好想下班
+@import './vendors/daterangepicker/daterangepicker'; //好想下班
+@import './pages/shoppingCart'; //好想下班
+@import './pages/payment'; //好想下班
 @import './pages/login';
 @import './pages/pwdForgot';
 @import './pages/service';

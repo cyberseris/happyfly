@@ -1,23 +1,49 @@
 // Utilities
 
-$utilities: (
-  ) !default;
+$utilities: () !default;
 // stylelint-disable-next-line scss/dollar-variable-default
 $utilities: map-merge(("font-size": (rfs: false,
-        property: font-size,
-        class: fs,
-        values: $font-sizes ),
-      "bg-opacity": (css-var: true,
-        class: bg-opacity,
-        values: (10: .1,
-          25: .25,
-          30:.3,
-          50: .5,
-          75: .75,
-          100: 1))),
-    $utilities
-);
+      property: font-size,
+      class: fs,
+      values: $font-sizes),
+    "bg-opacity": (css-var: true,
+      class: bg-opacity,
+      values: (10: .1,
+        25: .25,
+        30:.3,
+        50: .5,
+        75: .75,
+        100: 1)),
+    "text-shadow": (property: text-shadow,
+      rfs: false,
+      class: text-shadow,
+      values: (1: 0 4px 4px rgba(0, 0, 0, 0.75))),
+    "w-px": (property: width,
+      class: w-px,
+      values: (8: 8px, 20: 20px,
+        26: 26px,
+        50: 50px, 90: 90px,
+        100: 100px,
+        150: 150px)),
+    "h-px": (property: height,
+      class: h-px,
+      values: (8: 8px, 20:20px,
+        50:50px, 90:90px, 100:100px
+      )),
+    "h-vh": (property: height,
+      class: h-vh,
+      values: (50: 50vh, 80:80vh,
+        100:100vh))),
+  $utilities);
 
 .shadow-style {
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.fw-med {
+  font-weight: 500 !important;
+}
+
+.f-sans {
+  font-family: 'Noto Sans TC' !important;
 }

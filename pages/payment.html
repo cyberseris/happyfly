@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>index</title>
+
+</head>
+
+<body>
+    <%- include('./layout/header'); -%>
+
+        <main>
+
+            <section class="d-flex justify-content-center align-items-center py-96 bg-primary-3">
+                <div class="container">
+                    <div class="d-flex justify-content-center align-items-center">
+                        
+                        <div>
+                            <!-- title -->
+                            <h2 class="fs-32 fw-bold text-center">
+                                會員資料
+                            </h2>
+                            <!-- form -->
+                            <form action="" class="mt-20">
+
+                                <div class="row justify-content-center mb-16">
+                                    <span class="col-12 col-md-3 text-center mb-16 mb-md-0">
+                                        <img src="../assets/images/image01.png"
+                                            class="img-fluid rounded-circle w-px-90 h-px-90" alt="me">
+                                    </span>
+                                    <div class="col-12 col-md-9">
+                                        <div class="input-group mb-16">
+                                            <input type="text" class="form-control" placeholder="EX:王"
+                                                aria-label="EX:王">
+                                            <span class="input-group-text border-0 bg-transparent">名</span>
+                                            <input type="text" class="form-control" placeholder="EX:小東"
+                                                aria-label="EX:小東">
+                                        </div>
+                                        <div class="input-group">
+                                            <input type="text" class="form-control" placeholder="暱稱" aria-label="暱稱">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row mb-16">
+                                    <span class="col-3">性別</span>
+                                    <div class="col-9">
+                                        <div class="input-group">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="female" id="female">
+                                                <label class="form-check-label me-16" for="female">
+                                                    女
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="male" id="male"
+                                                    checked>
+                                                <label class="form-check-label" for="male">
+                                                    男
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row mb-16">
+                                    <span class="col-3">身分證</span>
+                                    <div class="col-9">
+                                        <div class="input-group">
+                                            <input type="text" class="form-control" placeholder="EX:A5641684684"
+                                                aria-label="EX:A5641684684">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row  mb-16">
+                                    <span class="col-3">出生日</span>
+                                    <div class="col-9">
+                                        <div class="input-group flex-wrap flex-md-nowrap">
+                                            <select class="form-select  w-custom-sm-90 mb-16 mb-md-0" aria-label="年份">
+                                                <option value="1">年份</option>
+                                                <option value="2">2022</option>
+                                                <option value="3">2021</option>
+                                            </select>
+                                            <span
+                                                class="input-group-text border-0 bg-transparent w-custom-sm-10">/</span>
+                                            <select class="form-select w-custom-sm-90 mb-16 mb-md-0" aria-label="月份">
+                                                <option value="1">月份</option>
+                                                <option value="2">12</option>
+                                                <option value="3">11</option>
+                                            </select>
+                                            <span
+                                                class="input-group-text border-0 bg-transparent w-custom-sm-10">/</span>
+                                            <select class="form-select w-custom-sm-100 mb-16 mb-md-0" aria-label="日期">
+                                                <option value="1">日期</option>
+                                                <option value="2">31</option>
+                                                <option value="3">30</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row  mb-16">
+                                    <span class="col-3">地址</span>
+                                    <div class="col-9">
+                                        <div class="input-group">
+                                            <input type="text" class="form-control" placeholder="EX:A56天隆市天國區地獄街十八號18樓"
+                                                aria-label="EX:天隆市天國區地獄街十八號18樓">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row  mb-16">
+                                    <span class="col-3">PHONE</span>
+                                    <div class="col-9">
+                                        <div class="input-group">
+                                            <input type="tel" class="form-control" placeholder="EX:0913548600"
+                                                aria-label="EX:0913548600">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row  mb-16">
+                                    <span class="col-3">MAIL</span>
+                                    <div class="col-9">
+                                        <div class="input-group">
+                                            <input type="email" class="form-control" placeholder="@gmail.com"
+                                                aria-label="@gmail.com">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row  mb-16">
+                                    <span class="col-3">付款方式</span>
+                                    <div class="col-9">
+                                        <div class="input-group">
+                                            <select class="form-select select-pay" aria-label="信用卡/現金/銀行">
+                                                <option value="1">信用卡/現金/銀行</option>
+                                                <option value="2">富邦信用卡</option>
+                                            </select>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row  mb-16">
+                                    <span class="col-3">飲食限制</span>
+                                    <div class="col-9">
+                                        <div class="input-group">
+                                            <textarea class="form-control" aria-label="With textarea"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row  mb-16">
+                                    <span class="col-3">緊急聯絡姓名</span>
+                                    <div class="col-9">
+                                        <div class="input-group">
+                                            <input type="text" class="form-control" placeholder="EX:王曉明"
+                                                aria-label="EX:王曉明">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row  mb-16">
+                                    <span class="col-3">緊急聯絡電話</span>
+                                    <div class="col-9">
+                                        <div class="input-group">
+                                            <input type="tel" class="form-control" placeholder="EX:0913548600"
+                                                aria-label="EX:0913548600">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row  mb-16">
+                                    <span class="col-3">緊急聯絡關係</span>
+                                    <div class="col-9">
+                                        <div class="input-group">
+                                            <select class="form-select" aria-label="關係">
+                                                <option value="1">母女</option>
+                                                <option value="2">父子</option>
+                                                <option value="3">兄弟</option>
+                                                <option value="4">姊妹</option>
+                                                <option value="5">配偶</option>
+                                                <option value="6">子女</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <button class="btn bg-light btn-hover1 me-16" type="submit">確定</button>
+                                    <button class="btn bg-light btn-hover1 me-16" type="reset">清除</button>
+                                </div>
+                            </form>
+                        </div>
+                    
+                    </div>
+            </section>
+
+        </main>
+
+        <%- include('./layout/footer'); -%>
+            <script type="module" src="../main.js"></script>
+</body>
+
+</html>
