@@ -1,0 +1,215 @@
+<!-- banner&search -->
+<section class="position-relative text-center bg-banner-img h-vh-80">
+    <!-- banner-text -->
+    <div class="text-white position-absolute top-50 start-50  translate-middle w-100">
+        <h1 class="fs-48 text-shadow-1">日韓一路玩到底</h1>
+        <h2 class="fs-32 text-shadow-1">早鳥優惠 5 折</h2>
+        <div class="d-flex justify-content-center align-items-center">
+            <a href="login.html" class="btn btn-primary rounded-pill fs-20 text-white py-16 px-24">加入會員
+                <img src="../assets/images/iconArrowRight.svg" alt="iconArrowRight"
+                    class="bg-white rounded-circle ms-12 w-px-20 h-px-20">
+            </a>
+        </div>
+    </div>
+
+    <!-- search -->
+    <div
+        class="d-flex flex-column flex-md-row justify-content-between align-items-stetch position-absolute shadow-sm bg-white top-100 start-50 translate-middle rounded-4 max-custom-width w-custom-sm-90 w-custom-90 px-12 px-md-36 py-12 py-md-36">
+        <!-- site -->
+        <div class="w-custom-150 w-custom-sm-100 d-flex justify-content-between align-items-center js-list">
+
+            <!-- 出發地 -->
+            <div class=" form-floating w-custom-50 me-12 me-md-24">
+                <input type="text" class="form-control input-bg-down" id="outset" placeholder="請選擇" value="請選擇">
+                <label for="outset" class="text-dark ">出發地</label>
+
+                <div class="position-relative input-bg-down-content js-content w-custom-150 w-custom-sm-100"
+                    data-target="outset">
+                    <div class="position-absolute bg-white border border-1 rounded p-16">
+                        <ul class="nav nav-pills  nav-tab-border tabs-hover mb-16" id="pills-tab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active" id="pills-1-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-1" type="button" role="tab" aria-controls="pills-1"
+                                    aria-selected="true">國外旅遊</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="pills-2-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-2" type="button" role="tab" aria-controls="pills-2"
+                                    aria-selected="false">國內旅遊</button>
+                            </li>
+                        </ul>
+                        <div class="tab-content bg-primary-3 rounded p-24" id="pills-tabContent">
+                            <div class="tab-pane fade show active" id="pills-1" role="tabpanel"
+                                aria-labelledby="pills-1-tab">
+                                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4">
+                                    <div class="col">
+                                        <p data-val="港澳中國">港澳中國</p>
+                                    </div>
+                                    <div class="col">
+                                        <p data-val="東北亞">東北亞</p>
+                                    </div>
+                                    <div class="col">
+                                        <p data-val="東南亞">東南亞</p>
+                                    </div>
+                                    <div class="col">
+                                        <p data-val="美加">美加</p>
+                                    </div>
+                                    <div class="col">
+                                        <p data-val="紐澳">紐澳</p>
+                                    </div>
+                                    <div class="col">
+                                        <p data-val="歐洲">歐洲</p>
+                                    </div>
+                                    <div class="col">
+                                        <p data-val="其他城市">其他城市</p>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="pills-2" role="tabpanel" aria-labelledby="pills-2-tab">
+                                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4">
+                                    <div class="col">
+                                        <p data-val="台北">台北</p>
+                                    </div>
+                                    <div class="col">
+                                        <p data-val="台中">台中</p>
+                                    </div>
+                                    <div class="col">
+                                        <p data-val="台南">台南</p>
+                                    </div>
+                                    <div class="col">
+                                        <p data-val="高雄">高雄</p>
+                                    </div>
+                                    <div class="col">
+                                        <p data-val="苗栗">苗栗</p>
+                                    </div>
+                                    <div class="col">
+                                        <p data-val="屏東">屏東</p>
+                                    </div>
+                                    <div class="col">
+                                        <p data-val="桃園">桃園</p>
+                                    </div>
+                                    <div class="col">
+                                        <p data-val="新竹">新竹</p>
+                                    </div>
+                                    <div class="col">
+                                        <p data-val="宜蘭">宜蘭</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!--目的地  -->
+            <div class="form-floating w-custom-50 me-0 me-md-24">
+                <input type="text" class="form-control input-bg-down" placeholder="請選擇" value="請選擇" id="destination">
+                <label for="destination" class="text-dark">目的地
+                </label>
+
+                <div class="position-relative input-bg-down-content js-content w-custom-150 w-custom-sm-100"
+                    data-target="destination">
+                    <div class="position-absolute bg-white border border-1 rounded p-16">
+                        <ul class="nav nav-pills  nav-tab-border tabs-hover mb-16" id="pills-tab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active" id="pills-3-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-3" type="button" role="tab" aria-controls="pills-3"
+                                    aria-selected="true">國外旅遊</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="pills-4-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-4" type="button" role="tab" aria-controls="pills-4"
+                                    aria-selected="false">國內旅遊</button>
+                            </li>
+                        </ul>
+                        <div class="tab-content bg-primary-3 rounded p-24" id="pills-tabContent">
+                            <div class="tab-pane fade show active" id="pills-3" role="tabpanel"
+                                aria-labelledby="pills-3-tab">
+                                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4">
+                                    <div class="col">
+                                        <p data-val="港澳中國">港澳中國</p>
+                                    </div>
+                                    <div class="col">
+                                        <p data-val="東北亞">東北亞</p>
+                                    </div>
+                                    <div class="col">
+                                        <p data-val="東南亞">東南亞</p>
+                                    </div>
+                                    <div class="col">
+                                        <p data-val="美加">美加</p>
+                                    </div>
+                                    <div class="col">
+                                        <p data-val="紐澳">紐澳</p>
+                                    </div>
+                                    <div class="col">
+                                        <p data-val="歐洲">歐洲</p>
+                                    </div>
+                                    <div class="col">
+                                        <p data-val="其他城市">其他城市</p>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="tab-pane fade" id="pills-4" role="tabpanel" aria-labelledby="pills-4-tab">
+                                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4">
+                                    <div class="col">
+                                        <p data-val="台北">台北</p>
+                                    </div>
+                                    <div class="col">
+                                        <p data-val="台中">台中</p>
+                                    </div>
+                                    <div class="col">
+                                        <p data-val="台南">台南</p>
+                                    </div>
+                                    <div class="col">
+                                        <p data-val="高雄">高雄</p>
+                                    </div>
+                                    <div class="col">
+                                        <p data-val="苗栗">苗栗</p>
+                                    </div>
+                                    <div class="col">
+                                        <p data-val="屏東">屏東</p>
+                                    </div>
+                                    <div class="col">
+                                        <p data-val="桃園">桃園</p>
+                                    </div>
+                                    <div class="col">
+                                        <p data-val="新竹">新竹</p>
+                                    </div>
+                                    <div class="col">
+                                        <p data-val="宜蘭">宜蘭</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- date -->
+        <div class="form-floating w-100 mt-12 mt-md-0 me-0 me-md-24">
+            <input type="text" class="btn-search form-control text-start input-bg-img " id="interval" placeholder="請選擇"
+                value="請選擇" name="datefilter">
+            <label for="interval" class="text-dark">出發區間</label>
+        </div>
+
+        <!--search btn -->
+        <a type="button"
+            class="btn btn-primary-3 rounded btn-hover d-flex align-items-center justify-content-center bg-primary-3 mt-12 mt-md-0"
+            href="searchResult.html">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                class="w-px-26">
+                <g class="svg_27_122">
+                    <path
+                        d="M9.5 16C7.68333 16 6.14583 15.3708 4.8875 14.1125C3.62917 12.8542 3 11.3167 3 9.5C3 7.68333 3.62917 6.14583 4.8875 4.8875C6.14583 3.62917 7.68333 3 9.5 3C11.3167 3 12.8542 3.62917 14.1125 4.8875C15.3708 6.14583 16 7.68333 16 9.5C16 10.2333 15.8833 10.925 15.65 11.575C15.4167 12.225 15.1 12.8 14.7 13.3L20.3 18.9C20.4833 19.0833 20.575 19.3167 20.575 19.6C20.575 19.8833 20.4833 20.1167 20.3 20.3C20.1167 20.4833 19.8833 20.575 19.6 20.575C19.3167 20.575 19.0833 20.4833 18.9 20.3L13.3 14.7C12.8 15.1 12.225 15.4167 11.575 15.65C10.925 15.8833 10.2333 16 9.5 16ZM9.5 14C10.75 14 11.8125 13.5625 12.6875 12.6875C13.5625 11.8125 14 10.75 14 9.5C14 8.25 13.5625 7.1875 12.6875 6.3125C11.8125 5.4375 10.75 5 9.5 5C8.25 5 7.1875 5.4375 6.3125 6.3125C5.4375 7.1875 5 8.25 5 9.5C5 10.75 5.4375 11.8125 6.3125 12.6875C7.1875 13.5625 8.25 14 9.5 14Z" />
+                </g>
+            </svg>
+        </a>
+
+    </div>
+</section>

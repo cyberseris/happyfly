@@ -28,7 +28,7 @@
   z-index: 1;
   display: none;
 
-  .col:hover {
+  .col:hover p {
     cursor: pointer;
     color: $primary;
   }
