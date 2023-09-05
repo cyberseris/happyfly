@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>旅客訂單資料確認</title>
+    <%- include('./layout/headLink'); -%>
+    <script type="module" src="../main.js"></script>
+</head>
+<body>
+
+    <section class="orderDetail">
+        <div class="container">
+            <div class="d-flex">
+                <div class="main w-100 d-flex flex-column align-items-center mt-32">
+                    <div class="historyOrder w-75 d-flex flex-column align-items-center ">
+                        <h1 class="fs-32 text-center mb-24 fw-bold">訂單內容</h1>
+                        <div class="w-75 mb-48">
+                            <h2 class="fs-24 pb-16 border-bottom border-3 border-dark fw-bold">台北&hArr;日本東京</h2>
+                            <div class="d-flex justify-content-between fs-20 mb-24 mt-16"><span>去程</span><span>8 月 XX 日</span><span>XX 航空</span></div>
+                            <div class="d-flex justify-content-between mb-24 fs-16"><span>06:00</span><span>11:00</span></div>
+                            <div class="d-flex justify-content-between mb-24 fs-20"><span>回程</span><span>8 月 XX 日</span><span>XX 航空</span></div>
+                            <div class="d-flex justify-content-between fs-16"><span>13:00</span><span>18:00</span></div>
+                        </div>
+
+                        <div class="w-75 mb-48">
+                            <h2 class="fs-24 pb-16 border-bottom border-3 border-dark fw-bold">合掌村夢幻點燈～冬華彩燈祭、金澤兼六園、牧歌之里戲雪、庄川峽雪見舟五日
+                            </h2>
+                            <div class="fs-16 mt-16 mb-16"><span class="me-32">團費 X 1位</span><span>$29,900</span></div>
+                            <div class="fs-16 mb-16"><span class="me-32">簽證費 X 1位</span><span>$0</span></div>
+                            <div class="fs-16 mb-16"><span class="me-32">小計</span><span>$29,900</span></div>
+                            <div class="fs-16 mb-16"><span class="me-32">金額小計
+                            </span><span>$29,900</span></div>
+                            <div class="fs-16 mb-16"><span class="me-32">總價</span><span>TWD29,900</span></div>
+                        </div>
+
+                        <div class="w-75 mb-48">
+                            <h2 class="fs-24 pb-16 border-bottom border-3 border-dark fw-bold">旅客名單
+                            </h2>
+                            <div class="fs-16 mt-16 mb-16"><span class="me-32">姓名: XXX</span><span>國籍: XXX</span></div>
+                            <div class="fs-16 mb-16"><span class="me-32">名字: XXX</span><span>證件類型: XXX</span></div>
+                            <div class="fs-16 mb-16"><span class="me-32">性別: XXX</span><span>證件號碼: XXX</span></div>
+                            <div class="fs-16 mb-16"><span class="me-32">出生日期: XXX
+                            </span><span>證件有效期: XXX</span></div>
+                        </div>
+
+                        <div class="w-75 mb-48">
+                            <h2 class="fs-24 pb-16 border-bottom border-3 border-dark fw-bold">訂單聯絡人
+                            </h2>
+                            <div class="fs-16 mt-16 mb-16"><span>聯絡人姓名: XXX</span></div>
+                            <div class="fs-16 mb-16"><span>手機: 09XX-XXX-XXX</span></div>
+                            <div class="fs-16 mb-16"><span>聯絡 e-mail: aaa@bbb.com.tw</span></div>
+                        </div>
+
+                        <a class="btn btn-priamry mb-48 bg-primary text-white">送出訂單</a>
+                    </div>
+                </div>
+            
+            </div>
+        </div>
+    </section>
+
+    <%- include('./layout/footer'); -%>
+</body>
+</html>

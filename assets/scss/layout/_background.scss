@@ -1,0 +1,45 @@
+.member,
+.memberEdit,
+.pwdEdit,
+.orderList,
+.history,
+.sideBar,
+.paymentInfo {
+    position: relative;
+}
+
+/* 
+.member:before,
+.memberEdit:before,
+.pwdEdit:before,
+.orderList:before,
+.history:before,
+.paymentInfo:before {
+    content: "";
+    position: absolute;
+    height: 50vh;
+    width: 68%;
+    background-image: url('../images/FOCUS.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: $primary-2;
+    top: 15%;
+    right: 0;
+    z-index: -1;
+    opacity: 0.4;
+
+}
+ */
+/* .sideBar:before {
+    content: "";
+    position: absolute;
+    height: 60vh;
+    width: 68%;
+    background-image: url('../images/SALE.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    opacity: 0.4;
+} */

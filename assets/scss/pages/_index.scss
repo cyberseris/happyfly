@@ -1,0 +1,112 @@
+.bg-banner-img {
+  background-image: url("../images/Banner.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  @include pad() {
+    background-image: url("../images/Banner-M.png");
+  }
+}
+
+.input-bg-img {
+  background-image: url("../images/iconDate.svg");
+  background-repeat: no-repeat;
+  background-position: right 20px center;
+  background-size: 18px 20px;
+}
+
+.input-bg-down {
+  background-image: url("../images/iconArrowDown.svg");
+  background-repeat: no-repeat;
+  background-position: right 20px center;
+  background-size: 18px 20px;
+}
+
+.input-bg-down-content {
+  top: 7px;
+  z-index: 1;
+  display: none;
+
+  .col:hover p {
+    cursor: pointer;
+    color: $primary;
+  }
+}
+
+.svg_27_122 {
+  fill: $primary;
+}
+
+.btn-hover:hover {
+  background: $primary !important;
+
+  .svg_27_122 {
+    fill: white;
+  }
+}
+
+.btn-hover1 {
+  color: $primary !important;
+
+  &:hover {
+    background: $primary !important;
+    color: $white !important;
+  }
+}
+
+.writing-vertical {
+  -webkit-writing-mode: vertical-lr;
+  writing-mode: vertical-lr;
+
+  @include pc() {
+    -webkit-writing-mode: initial;
+    writing-mode: initial;
+  }
+}
+
+.bg-left-linear {
+  background-image: url("../images/FOCUS.svg"), linear-gradient(to right, #EDF3F7 50%, transparent 50%);
+  background-repeat: no-repeat, repeat;
+  background-size: 623px 143px, cover;
+  background-position: left 10% bottom, center;
+
+  @include pc() {
+    background-image: url("../images/FOCUS.svg"), linear-gradient(to right, #EDF3F7 50%, #EDF3F7 50%);
+    background-size: 323px 66px, cover;
+    background-position: left bottom, center;
+  }
+}
+
+.left-bg-img {
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.589), transparent), url("../images/imageFocus01.png");
+  background-repeat: no-repeat, no-repeat;
+  background-size: cover, cover;
+  background-position: bottom, center;
+  max-width: 636px;
+  min-height: 233px;
+}
+
+.nav-tab-border {
+  .active {
+    border-bottom: 3px solid $primary-2;
+  }
+}
+
+.btn-outline-orange:hover {
+  color: $white;
+}
+
+.bg-right-linear {
+  background-image: url("../images/SALE.svg"), linear-gradient(to left, #EDF3F7 70%, transparent 50%);
+  background-repeat: no-repeat, no-repeat;
+  background-size: 111px 363px, auto 470px;
+  background-position: right bottom, bottom;
+
+  @include pc() {
+    background-image: url("../images/SALE.svg"), linear-gradient(to left, #EDF3F7 70%, transparent 50%);
+    background-repeat: no-repeat, no-repeat;
+    background-size: 48px 157px, auto 350px;
+    background-position: right bottom 40%, center 110px;
+  }
+}

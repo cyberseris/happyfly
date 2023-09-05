@@ -1,0 +1,31 @@
+@for $i from 12 through 26 {
+    @include mobile() {
+        .fw-sm-#{$i} {
+            font-size: $i * 1px !important;
+        }
+    }
+}
+
+// 客製化寬度
+$width-custom: 10,
+20,
+50,
+70,
+80,
+90,
+90,
+100,
+150;
+
+@each $w in $width-custom {
+    .w-custom-#{$w} {
+        max-width: 1296px;
+        width: $w * 1%;
+    }
+
+    .w-custom-sm-#{$w} {
+        @include pad() {
+            width: $w * 1% !important;
+        }
+    }
+}
