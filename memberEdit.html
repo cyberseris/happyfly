@@ -16,8 +16,8 @@
 
 <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700&family=Yeseva+One&display=swap"
         rel="stylesheet"/>    
-  <script type="module" crossorigin src="/happyfly/assets/bootstrap.min-09d1a52c.js"></script>
-  <link rel="stylesheet" href="/happyfly/assets/bootstrap-a6ffa7b9.css">
+  <script type="module" crossorigin src="/happyfly/assets/bootstrap.min-5281faef.js"></script>
+  <link rel="stylesheet" href="/happyfly/assets/bootstrap-e6e8e8d2.css">
 </head>
 <body>
     <div class="bg-white bg-opacity-30">
@@ -37,7 +37,7 @@
                             <h5 class="mb-0"><a href="about.html">關於我們</a></h5>
                         </li>
                         <li class="mx-24">
-                            <h5 class="mb-0"><a href="#">旅行紀事</a></h5>
+                            <h5 class="mb-0"><a href="payment.html">旅行紀事</a></h5>
                         </li>
                         <li class="mx-24">
                             <h5 class="mb-0"><a href="service.html">客服中心</a></h5>
@@ -74,12 +74,10 @@
         </div>
 
     </header>
-</div>    
-    <div class="img-member d-flex align-items-center">
-      <h2 class="ms-28 my-20 my-md-60 ms-md-60 border-start border-dark border-5 ps-8 ps-md-16  title-member">會員中心</h2>
-   </div>
-
-    <section class="memberEdit">
+</div>    <div class="img-member d-flex align-items-center">
+    <h2 class="ms-28 my-20 my-md-60 ms-md-60 border-start border-dark border-5 ps-8 ps-md-16  title-member fw-bold">會員中心</h2>
+ </div>
+    <section class="memberEdit bg-right-linear">
         <div class="container">
             <div class="d-flex">
                 <div>
@@ -111,82 +109,82 @@
                 </div>
 
                 <div class="memberInfo w-100 d-flex flex-column justify-content-center align-items-center">
-                    <h1 class="fs-32 mb-24 mt-32 w-100 text-center">會員資料修改</h1>  
+                    <h1 class="fs-32 mb-24 mt-32 w-100 text-center fw-bold">會員資料修改</h1>  
 
-                    <form action="#" class="w-100 w-md-50 needs-validation mb-32" novalidate>
-                        <div class="row mb-16 d-flex align-items-center ">
-                            <label for="account" class="col-4 text-end">帳號</label>
+                    <form action="#" class="w-100-50 needs-validation mb-32 fs-16-20 bg-white" novalidate>
+                        <div class="row mb-16 d-flex align-items-center">
+                            <label for="account" class="col-4 text-end fw-bold">帳號</label>
                              <div class="col-8">
                                <input type="text" class="form-control-plaintext" id="account" value="happyfly" readonly>
                              </div>
                          </div>
                         <div class="row mb-16 d-flex align-items-center">
-                           <label for="name" class="col-4 text-end">中文姓名</label>
+                           <label for="name" class="col-4 text-end fw-bold">中文姓名</label>
                             <div class="col-8">
                               <input type="text" class="form-control-plaintext" id="name" value="六角學院學員" readonly>
                             </div>
                         </div>
                         <div class="row mb-16 d-flex align-items-center">
-                            <label for="nameEn" class="col-4 text-end">英文姓名</label>
+                            <label for="nameEn" class="col-4 text-end fw-bold">英文姓名</label>
                              <div class="col-4">
                                <input type="text" class="form-control-plaintext" id="nameEn" value="hexschool student" readonly>
                              </div>
                         </div>
                         <div class="row mb-16 d-flex align-items-center">
-                            <label for="gender" class="col-4 text-end">性別</label>
+                            <label for="gender" class="col-4 text-end fw-bold">性別</label>
                              <div class="col-4">
                                <input type="text" class="form-control-plaintext" id="gender" value="男/女" readonly>
                              </div>
                         </div>
                         <div class="row mb-16 d-flex align-items-center">
-                            <label for="birthday" class="col-4 text-end">出生日</label>
-                             <div class="col-4">
+                            <label for="birthday" class="col-4 text-end fw-bold">出生日</label>
+                             <div class="col-8">
                                <input type="text" class="form-control-plaintext" id="birthday" value="2023/07/07" readonly>
                              </div>
                         </div>
                         <div class="row mb-16 d-flex align-items-center">
-                            <label for="address" class="col-4 text-end">地址</label>
+                            <label for="address" class="col-4 text-end fw-bold">地址</label>
                              <div class="col-8 col-md-4">
                                <input type="text" class="pt-8 pb-8 ps-16 w-100" id="address" placeholder="請輸入地址" required>
                                <span id="addressFeedback" class="invalid-feedback">請輸入地址</span>
                              </div>
                         </div>
                         <div class="row mb-16 d-flex align-items-center">
-                            <label for="tel" class="col-4 text-end">電話</label>
+                            <label for="tel" class="col-4 text-end fw-bold">電話</label>
                              <div class="col-8 col-md-4">
                                <input type="text" class="pt-8 pb-8 ps-16 w-100" id="tel" placeholder="請輸入電話" required>
                                <span id="telFeedback" class="invalid-feedback">請輸入電話</span>
                              </div>
                         </div>
                         <div class="row mb-16 d-flex align-items-center">
-                            <label for="mail" class="col-4 text-end">MAIL</label>
+                            <label for="mail" class="col-4 text-end fw-bold">MAIL</label>
                              <div class="col-8 col-md-4">
                                <input type="text" class="pt-8 pb-8 ps-16 w-100" id="mail" placeholder="hexschool@test.com">
                              </div>
                         </div>
                         <div class="row mb-16 d-flex align-items-center">
-                            <label for="dietaryRestrict" class="col-4 text-end">飲食限制</label>
+                            <label for="dietaryRestrict" class="col-4 text-end fw-bold">飲食限制</label>
                              <div class="col-8 col-md-4">
                                <input type="text" class="pt-8 pb-8 ps-16 w-100" id="dietaryRestrict" placeholder="葷素皆可" required>
                                <span id="dietaryRestrictFeedback" class="invalid-feedback">請輸入飲食限制</span>
                              </div>
                         </div>
                         <div class="row mb-16 d-flex align-items-center">
-                            <label for="emergencyName" class="col-4 text-end">緊急聯絡姓名</label>
+                            <label for="emergencyName" class="col-4 text-end fw-bold">緊急聯絡姓名</label>
                              <div class="col-8 col-md-4">
                                <input type="text" class="pt-8 pb-8 ps-16 w-100" id="emergencyName" placeholder="hexschool" required>
                                <span id="emergencyNameFeedback" class="invalid-feedback">請輸入緊急聯絡姓名</span>
                              </div>
                         </div>  
                         <div class="row mb-16 d-flex align-items-center">
-                            <label for="emergencyTel" class="col-4 text-end">緊急聯絡電話</label>
+                            <label for="emergencyTel" class="col-4 text-end fw-bold">緊急聯絡電話</label>
                              <div class="col-8 col-md-4">
                                <input type="text" class="pt-8 pb-8 ps-16 w-100" id="emergencyTel" placeholder="hexschool" required>
                                <span id="emergencyTelFeedback" class="invalid-feedback">請輸入緊急聯絡電話</span>
                              </div>
                         </div> 
                         <div class="row mb-16 d-flex align-items-center">
-                            <label for="emergencyRelation" class="col-4 text-end">緊急聯絡關係</label>
+                            <label for="emergencyRelation" class="col-4 text-end fw-bold">緊急聯絡關係</label>
                              <div class="col-8 col-md-4">
                                <input type="text" class="pt-8 pb-8 ps-16 w-100" id="emergencyRelation" placeholder="魔法師門徒" required>
                                <span id="emergencyRelationFeedback" class="invalid-feedback">請輸入緊急聯絡關係</span>

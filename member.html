@@ -16,8 +16,8 @@
 
 <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700&family=Yeseva+One&display=swap"
         rel="stylesheet"/>    
-  <script type="module" crossorigin src="/happyfly/assets/bootstrap.min-09d1a52c.js"></script>
-  <link rel="stylesheet" href="/happyfly/assets/bootstrap-a6ffa7b9.css">
+  <script type="module" crossorigin src="/happyfly/assets/bootstrap.min-5281faef.js"></script>
+  <link rel="stylesheet" href="/happyfly/assets/bootstrap-e6e8e8d2.css">
 </head>
 <body>
     <div class="bg-white bg-opacity-30">
@@ -37,7 +37,7 @@
                             <h5 class="mb-0"><a href="about.html">關於我們</a></h5>
                         </li>
                         <li class="mx-24">
-                            <h5 class="mb-0"><a href="#">旅行紀事</a></h5>
+                            <h5 class="mb-0"><a href="payment.html">旅行紀事</a></h5>
                         </li>
                         <li class="mx-24">
                             <h5 class="mb-0"><a href="service.html">客服中心</a></h5>
@@ -74,12 +74,10 @@
         </div>
 
     </header>
-</div>
-    <div class="img-member d-flex align-items-center">
-        <h2 class="ms-28 my-20 my-md-60 ms-md-60 border-start border-dark border-5 ps-8 ps-md-16  title-member">會員中心</h2>
-    </div>
-
-    <section class="member vh-100">
+</div>    <div class="img-member d-flex align-items-center">
+    <h2 class="ms-28 my-20 my-md-60 ms-md-60 border-start border-dark border-5 ps-8 ps-md-16  title-member fw-bold">會員中心</h2>
+ </div>
+    <section class="member bg-right-linear">
         <div class="container">        
             <div class="d-flex">
                 <div>
@@ -111,30 +109,88 @@
                 </div>
 
                 <div class="w-100 d-flex flex-column justify-content-center align-items-center">
-                    <div class="memberInfo">
-                        <h1 class="fs-32 mb-24 pb-24 mt-32 w-100 text-center">會員資料</h1>
-                        <div class="table-responsive-lg">
-                            <table class="table fs-16">
-                                <tbody>
-                                    <tr><td>帳號</td><td>happyfly</td></tr>
-                                    <tr><td>中文姓名</td><td>六角學院學員</td></tr>
-                                    <tr><td>英文姓名</td><td>hexschool student</td></tr>
-                                    <tr><td>性別</td><td>男/女</td></tr>
-                                    <tr><td>出生日</td><td>2023/07/07</td></tr>
-                                    <tr><td>地址</td><td>高雄市新興區 X 路 X 號 21樓</td></tr>
-                                    <tr><td>PHONE</td><td>09XX-XXX-XXX</td></tr>
-                                    <tr><td>MAIL</td><td>hexschool@test.com</td></tr>
-                                    <tr><td>飲食限制</td><td>葷素皆可</td></tr>
-                                    <tr><td>緊急聯絡姓名</td><td>hexschool</td></tr>
-                                    <tr><td>緊急聯絡電話</td><td>09XX-XXX-XXX</td></tr>
-                                    <tr><td>緊急聯絡關係</td><td>魔法師門徒</td></tr>
-                                </tbody>
-                            </table>
+                    <div class="memberInfo w-100">
+                        <h1 class="fs-32 mb-24 mt-32 w-100 text-center fw-bold">會員資料</h1> 
+                        <div class="card mx-auto mt-32 w-100-50">
+                            <div class="card-body fs-16-20">
+                                <div class="row mb-16 d-flex align-items-center">
+                                    <label for="account" class="col-4 text-end fw-bold">帳號</label>
+                                     <div class="col-8">
+                                       <input type="text" class="form-control-plaintext" id="account" value="happyfly" readonly>
+                                     </div>
+                                 </div>
+                                <div class="row mb-16 d-flex align-items-center">
+                                   <label for="name" class="col-4 text-end fw-bold">中文姓名</label>
+                                    <div class="col-8">
+                                      <input type="text" class="form-control-plaintext" id="name" value="六角學院學員" readonly>
+                                    </div>
+                                </div>
+                                <div class="row mb-16 d-flex align-items-center">
+                                    <label for="nameEn" class="col-4 text-end fw-bold">英文姓名</label>
+                                     <div class="col-4">
+                                       <input type="text" class="form-control-plaintext" id="nameEn" value="hexschool student" readonly>
+                                     </div>
+                                </div>
+                                <div class="row mb-16 d-flex align-items-center">
+                                    <label for="gender" class="col-4 text-end fw-bold">性別</label>
+                                     <div class="col-4">
+                                       <input type="text" class="form-control-plaintext" id="gender" value="男/女" readonly>
+                                     </div>
+                                </div>
+                                <div class="row mb-16 d-flex align-items-center">
+                                    <label for="birthday" class="col-4 text-end fw-bold">出生日</label>
+                                     <div class="col-4">
+                                       <input type="text" class="form-control-plaintext" id="birthday" value="2023/07/07" readonly>
+                                     </div>
+                                </div>
+                                <div class="row mb-16 d-flex align-items-center">
+                                    <label for="address" class="col-4 text-end fw-bold">地址</label>
+                                    <div class="col-8">
+                                        <input type="text" class="form-control-plaintext" id="address" value="高雄市新興區 X 路 X 號" readonly>
+                                    </div>
+                                </div>
+                                <div class="row mb-16 d-flex align-items-center">
+                                    <label for="address" class="col-4 text-end fw-bold">電話</label>
+                                    <div class="col-8">
+                                        <input type="text" class="form-control-plaintext" id="tel" value="09XX-XXX-XXX" readonly>
+                                    </div>
+                                </div>       
+                                <div class="row mb-16 d-flex align-items-center">
+                                    <label for="address" class="col-4 text-end fw-bold">MAIL</label>
+                                    <div class="col-8">
+                                        <input type="text" class="form-control-plaintext" id="mail" value="hexschool@test.com" readonly>
+                                    </div>
+                                </div>  
+                                <div class="row mb-16 d-flex align-items-center">
+                                    <label for="address" class="col-4 text-end fw-bold">飲食限制</label>
+                                    <div class="col-8">
+                                        <input type="text" class="form-control-plaintext" id="dietaryRestrict" value="葷素皆可" readonly>
+                                    </div>
+                                </div> 
+
+                                <div class="row mb-16 d-flex align-items-center">
+                                    <label for="address" class="col-4 text-end fw-bold">緊急聯絡姓名</label>
+                                    <div class="col-4">
+                                        <input type="text" class="form-control-plaintext" id="emergencyName" value="hexschool" readonly>
+                                    </div>
+                                </div> 
+                                <div class="row mb-16 d-flex align-items-center">
+                                    <label for="address" class="col-4 text-end fw-bold">緊急聯絡電話</label>
+                                    <div class="col-4">
+                                        <input type="text" class="form-control-plaintext" id="emergencyTel" value="09XX-XXX-XXX" readonly>
+                                    </div>
+                                </div> 
+                                <div class="row mb-16 d-flex align-items-center">
+                                    <label for="address" class="col-4 text-end fw-bold">緊急聯絡關係</label>
+                                    <div class="col-4">
+                                        <input type="text" class="form-control-plaintext" id="emergencyRelationship" value="魔法師門徒" readonly>
+                                    </div>
+                                </div> 
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-           
         </div>
     </section>
 
