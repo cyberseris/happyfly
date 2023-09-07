@@ -25,13 +25,20 @@
 
 .input-bg-down-content {
   top: 7px;
-  z-index: 1;
   display: none;
 
   .col:hover p {
     cursor: pointer;
     color: $primary;
   }
+}
+
+.position-initial {
+  position: initial;
+}
+
+.z-index-1 {
+  z-index: 1;
 }
 
 .svg_27_122 {
