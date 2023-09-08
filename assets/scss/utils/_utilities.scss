@@ -23,6 +23,63 @@ $utilities: map-merge(
         75: .75,
         100: 1
       )
+    ),
+    "cursor": (
+      property: cursor,
+      values: (
+        pointer:pointer
+      )
+    ),
+    "top": (
+      property: top,
+      responsive:true,
+      values: (
+        0: 0,
+        30:30%,
+        40:40%,
+        50: 50%,
+        100: 100%
+      )
+    ),
+    "width": (
+      property: width,
+      class: w,
+      responsive:true,
+      values: (
+        10:10%,
+        25: 25%,
+        40:40%,
+        50: 50%,
+        75: 75%,
+        100: 100%,
+        auto: auto
+      )
+    ),
+    "height": (
+      property: height,
+      class: h,
+      values: (
+        10:10%,
+        25: 25%,
+        50: 50%,
+        75: 75%,
+        100: 100%,
+        auto: auto
+      )
+    ),
+    "rounded": (
+      property: border-radius,
+      responsive:true,
+      class: rounded,
+      values: (
+        null: $border-radius,
+        0: 0,
+        1: $border-radius-sm,
+        2: $border-radius,
+        3: $border-radius-lg,
+        circle: 50%,
+        pill: $border-radius-pill
+      )
     )
   ),
   $utilities

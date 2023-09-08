@@ -1,0 +1,18 @@
+.blog {
+
+    &-img {
+        width: 100%;
+        background-image: url('../images/blog.jpg');
+        background-size: cover;
+        background-position: center;
+    }
+
+}
+.img-left{
+    height: 500px;
+    object-fit: cover;
+}
+.img-cover {
+    height: 300px;
+    object-fit: cover;
+  }
