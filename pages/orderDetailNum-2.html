@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <%- include('./layout/headLink'); -%>
+    <script type="module" src="../main.js"></script>
+    <title>目前訂單內容</title>
+</head>
+<body class="vh-100">
+    <%- include('./layout/header') -%>
+    <%- include('./layout/bannerMember') -%>
+
+    <section class="orderDetailNum">
+        <div class="container">
+            <div class="d-flex">
+
+                <div>
+                    <%- include('./layout/sideBar') -%>
+                </div>
+    
+                <div class="w-100 d-flex flex-column justify-content-center align-items-center">
+                    <div class="w-100">
+                        <h1 class="fs-32 mb-60 mt-32 w-100 text-center fw-bold">台北至法國</h1> 
+                        
+                        <%- include('./layout/progress') -%>
+    
+                        <div class="row">
+                            <div class="col-12 col-md-6">
+                                <img src="../assets/images/image03.png" class="img-fluid rounded-start w-100 h-100" alt="法國.png">
+                            </div>
+                            <div class="col-12 col-md-6 p-32">
+                                <p>旅遊型態 : 團體</p>
+                                <p>地點 : 台北至賽福瑞</p>
+                                <p>人數 : 成人2位</p>
+                                <p>日期 : 2023/07/05 - 2023/08/16</p>
+                                <p>價格 : $ 21000</p>
+                                <p><span>付款 :&nbsp; </span><select name="creditCards" id="creditCards">
+                                    <option value="富邦 J 卡">富邦 J 卡</option>
+                                    <option value="台新信用卡">台新信用卡</option>
+                                    <option value="元大銀行信用卡">元大銀行信用卡</option>
+                                </select>  </p>
+                            </div>
+                        </div>
+    
+                        <div class="row">
+                            <div class="col-12 p-32">
+                                <h5 class="mb-16 fw-bold">【富士山麓溫泉區】</h5>
+                                <h6>山中湖SUN PLAZA溫泉飯店</h6>
+                                <p>本飯店坐落於距離富士山最近的湖泊「山中湖」的湖畔，設有日式的大澡堂與露天溫泉並準備了美味的料理以療癒旅行的疲累。</p>
+                                <h6>春日居VIEW 溫泉飯店</h6>
+                                <p>石和．春日居溫泉鄉在笛吹川的灌溉之下，盛產水果並以溫泉著稱，豐饒的自然環境迎接訪客的蒞臨。在山梨縣色彩繽紛的四季景致中，度過靜謐而愜意的休閒假期。</p>
+                                <h6>石和 VIEW 溫泉飯店</h6>
+                                <p>美麗的自然與文化，孕育出水果與溫泉之鄉—石和溫泉鄉。歡迎蒞臨此地，度過優雅的假期時光。飯店設施格調高雅，秉持著和風洗練的感性與真誠，為訪客提供最佳服務。</p>
+                                <h6>富之湖溫泉飯店</h6>
+                                <p>在富之湖飯店您可以體會到『舒適』和『美味』以及最美麗的富士山景色，所有客房均瀕臨湖畔。 氣候良好時可以從正面欣賞富士山景色。</p>
+                            </div>
+                        </div>
+    
+                        <div class="row d-flex mb-40">
+                            <a href="#" class="col-12 col-md-6 py-8 text-center bg-gray-500">付款</a>
+                            <a href="#" class="col-12 col-md-6 py-8 text-center text-white bg-gray-500">取消預約</a>
+                        </div>
+    
+                        <div class="row">
+                            <div class="col-12">
+                                <h5 class="mb-16 fw-bold">注意事項 : </h5>
+                                <p>報名後因故不能參加活動時，請儘早來電告知；若於出發前41天取消訂單，需收取旅遊費用全額5%手續費；</p>
+                                <p>於出發前31天至40天取消訂單，需收取旅遊費用全額10%手續費；於出發前21至30天取消訂單，需收取旅遊費用全額20%手續費；</p>
+                                <p>於出發前2至20天取消訂單，需收取旅遊費用全額30%手續費；於出發前1天取消訂單，需收取旅遊費用全額50%手續費；</p>
+                                <p>於出發當天取消訂單、集合逾時、因個人因素私自脫隊、及未通知不參加者恕不退費。</p>
+                                <p>若旅行社為履行契約已支出之費用超過上述規定時，旅客須就旅行社之實際支出支付取消費。</p>
+                                <p>收取手續費標準依國外旅遊定型化契約書內容為主。</p>
+                                <p>有任何疑問歡迎來電客服  0900000886</p>
+                            </div>
+                        </div>
+    
+    
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <%- include('./layout/footer'); -%>
+</body>
+</html>

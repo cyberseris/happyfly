@@ -69,3 +69,16 @@ $utilities: map-merge(("font-size": (rfs: false,
 .minH-900 {
   min-height: 900px;
 }
+
+.border-radius-50 {
+  border-radius: 50% !important;
+  overflow: hidden !important;
+}
+
+.bg-gray-500 {
+  background: $gray-500;
+}
+
+.minH-100 {
+  min-height: 100vh;
+}
