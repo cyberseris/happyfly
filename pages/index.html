@@ -10,6 +10,8 @@
   <script type="text/javascript" src="../node_modules/daterangepicker/moment.min.js"></script>
   <script type="text/javascript" src="../node_modules/daterangepicker/daterangepicker.js"></script>
   <script src="../assets/scss/vendors/daterangepicker/index_date.js"></script>
+  <script src="../assets/scss/vendors/swiper/swiper.js"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -21,7 +23,7 @@
         <!-- 焦點 -->
         <section class="d-flex justify-content-center align-items-stetch bg-left-linear pb-108 pt-172">
           <div class="container">
-            <div class="row g-4">
+            <div class="row g-4" data-aos="fade-up">
               <!-- title -->
               <div class="col-sm-1 col-lg-1">
                 <h2 class="fs-32 fw-bold writing-vertical">
@@ -96,7 +98,7 @@
         <!-- 全球走透透 -->
         <section class="d-flex justify-content-center align-items-stetch mt-96">
           <div class="container">
-            <div class="d-flex flex-column flex-md-row justify-content-between align-items-center">
+            <div class="d-flex flex-column flex-md-row justify-content-between align-items-center" data-aos="fade-up">
               <!-- title -->
               <h2 class="fs-32 fw-bold">
                 <span class="text-primary">●</span>
@@ -122,133 +124,129 @@
             </div>
 
             <!-- tabs -->
-            <div class="tab-content pt-60" id="pills-tabContent">
+            <div class="tab-content pt-60" id="pills-tabContent" data-aos="fade-up">
 
               <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
 
                 <!-- content -->
-                <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 g-4 slick-carousel">
-                  <div class="col">
-                    <div class="card border border-1 h-100">
-                      <img src="../assets/images/image01.png" class="card-img-top" alt="image01">
-                      <div class="card-body">
-                        <h5 class="card-title">賽福瑞六人成行</h5>
-                        <p class="card-text">安帕瓦螢火蟲五日</p>
+                <div class="swiper mySwiper swiper-scss">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="card border border-1 h-100">
+                        <img src="../assets/images/image01.png" class="card-img-top" alt="image01">
+                        <div class="card-body">
+                          <h5 class="card-title">賽福瑞六人成行</h5>
+                          <p class="card-text">安帕瓦螢火蟲五日</p>
+                        </div>
+                        <div class="card-footer border-0">
+                          <a href="itineraryDetail.html" class="btn btn-outline-orange w-100">NT$20,900 起
+                          </a>
+                        </div>
                       </div>
-                      <div class="card-footer border-0">
-                        <a href="itineraryDetail.html" class="btn btn-outline-orange w-100">NT$20,900 起
-                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="card border border-1 h-100">
+                        <img src="../assets/images/image02.png" class="card-img-top" alt="image02">
+                        <div class="card-body">
+                          <h5 class="card-title">美麗海水族館.波上宮4日</h5>
+                          <p class="card-text">贈送半潛水艇</p>
+                        </div>
+                        <div class="card-footer border-0">
+                          <a href="itineraryDetail.html" class="btn btn-outline-orange w-100">NT$24,900 起
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="card border border-1 h-100">
+                        <img src="../assets/images/image03.png" class="card-img-top" alt="image03">
+                        <div class="card-body">
+                          <h5 class="card-title">艾菲爾鐵塔景觀餐廳8日</h5>
+                          <p class="card-text">周杰倫 MV 莎瑪麗丹百貨</p>
+                        </div>
+                        <div class="card-footer border-0">
+                          <a href="itineraryDetail.html" class="btn btn-outline-orange w-100">NT$57,900 起
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="card border border-1 h-100">
+                        <img src="../assets/images/image04.png" class="card-img-top" alt="image04">
+                        <div class="card-body">
+                          <h5 class="card-title">五星中越峴港</h5>
+                          <p class="card-text">會安古鎮美山聖地</p>
+                        </div>
+                        <div class="card-footer border-0">
+                          <a href="itineraryDetail.html" class="btn btn-outline-orange w-100">NT$29,999 起
+                          </a>
+                        </div>
                       </div>
                     </div>
                   </div>
-                  <div class="col">
-                    <div class="card border border-1 h-100">
-                      <img src="../assets/images/image02.png" class="card-img-top" alt="image02">
-                      <div class="card-body">
-                        <h5 class="card-title">美麗海水族館.波上宮4日</h5>
-                        <p class="card-text">贈送半潛水艇</p>
-                      </div>
-                      <div class="card-footer border-0">
-                        <a href="itineraryDetail.html" class="btn btn-outline-orange w-100">NT$24,900 起
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col  d-none d-lg-flex">
-                    <div class="card border border-1 h-100">
-                      <img src="../assets/images/image03.png" class="card-img-top" alt="image03">
-                      <div class="card-body">
-                        <h5 class="card-title">艾菲爾鐵塔景觀餐廳8日</h5>
-                        <p class="card-text">周杰倫 MV 莎瑪麗丹百貨</p>
-                      </div>
-                      <div class="card-footer border-0">
-                        <a href="itineraryDetail.html" class="btn btn-outline-orange w-100">NT$57,900 起
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col  d-none d-lg-flex">
-                    <div class="card border border-1 h-100">
-                      <img src="../assets/images/image04.png" class="card-img-top" alt="image04">
-                      <div class="card-body">
-                        <h5 class="card-title">五星中越峴港</h5>
-                        <p class="card-text">會安古鎮美山聖地</p>
-                      </div>
-                      <div class="card-footer border-0">
-                        <a href="itineraryDetail.html" class="btn btn-outline-orange w-100">NT$29,999 起
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="d-flex d-md-none justify-content-center align-content-center mt-24">
-                  <span class="w-px-8 h-px-8 bg-primary m-4 rounded"></span>
-                  <span class="w-px-8 h-px-8 border border-primary m-4 rounded"></span>
+                  <div class="swiper-pagination"></div>
                 </div>
 
               </div>
               <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
 
                 <!-- content -->
-                <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 g-4 slick-carousel">
-                  <div class="col">
-                    <div class="card border border-1 h-100">
-                      <img src="../assets/images/image05.png" class="card-img-top" alt="image05">
-                      <div class="card-body">
-                        <h5 class="card-title">賽福瑞六人成行</h5>
-                        <p class="card-text">安帕瓦螢火蟲五日</p>
+                <div class="swiper mySwiper swiper-scss">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="card border border-1 h-100">
+                        <img src="../assets/images/image05.png" class="card-img-top" alt="image05">
+                        <div class="card-body">
+                          <h5 class="card-title">賽福瑞六人成行</h5>
+                          <p class="card-text">安帕瓦螢火蟲五日</p>
+                        </div>
+                        <div class="card-footer border-0">
+                          <a href="itineraryDetail.html" class="btn btn-outline-orange w-100">NT$20,900 起
+                          </a>
+                        </div>
                       </div>
-                      <div class="card-footer border-0">
-                        <a href="itineraryDetail.html" class="btn btn-outline-orange w-100">NT$20,900 起
-                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="card border border-1 h-100">
+                        <img src="../assets/images/image06.png" class="card-img-top" alt="image06">
+                        <div class="card-body">
+                          <h5 class="card-title">美麗海水族館.波上宮4日</h5>
+                          <p class="card-text">贈送半潛水艇</p>
+                        </div>
+                        <div class="card-footer border-0">
+                          <a href="itineraryDetail.html" class="btn btn-outline-orange w-100">NT$24,900 起
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="card border border-1 h-100">
+                        <img src="../assets/images/image07.png" class="card-img-top" alt="image07">
+                        <div class="card-body">
+                          <h5 class="card-title">艾菲爾鐵塔景觀餐廳8日</h5>
+                          <p class="card-text">周杰倫 MV 莎瑪麗丹百貨</p>
+                        </div>
+                        <div class="card-footer border-0">
+                          <a href="itineraryDetail.html" class="btn btn-outline-orange w-100">NT$57,900 起
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="card border border-1 h-100">
+                        <img src="../assets/images/image08.png" class="card-img-top" alt="image08">
+                        <div class="card-body">
+                          <h5 class="card-title">五星中越峴港</h5>
+                          <p class="card-text">會安古鎮美山聖地</p>
+                        </div>
+                        <div class="card-footer border-0">
+                          <a href="itineraryDetail.html" class="btn btn-outline-orange w-100">NT$29,999 起
+                          </a>
+                        </div>
                       </div>
                     </div>
                   </div>
-                  <div class="col">
-                    <div class="card border border-1 h-100">
-                      <img src="../assets/images/image06.png" class="card-img-top" alt="image06">
-                      <div class="card-body">
-                        <h5 class="card-title">美麗海水族館.波上宮4日</h5>
-                        <p class="card-text">贈送半潛水艇</p>
-                      </div>
-                      <div class="card-footer border-0">
-                        <a href="itineraryDetail.html" class="btn btn-outline-orange w-100">NT$24,900 起
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col  d-none d-lg-flex">
-                    <div class="card border border-1 h-100">
-                      <img src="../assets/images/image07.png" class="card-img-top" alt="image07">
-                      <div class="card-body">
-                        <h5 class="card-title">艾菲爾鐵塔景觀餐廳8日</h5>
-                        <p class="card-text">周杰倫 MV 莎瑪麗丹百貨</p>
-                      </div>
-                      <div class="card-footer border-0">
-                        <a href="itineraryDetail.html" class="btn btn-outline-orange w-100">NT$57,900 起
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col  d-none d-lg-flex">
-                    <div class="card border border-1 h-100">
-                      <img src="../assets/images/image08.png" class="card-img-top" alt="image08">
-                      <div class="card-body">
-                        <h5 class="card-title">五星中越峴港</h5>
-                        <p class="card-text">會安古鎮美山聖地</p>
-                      </div>
-                      <div class="card-footer border-0">
-                        <a href="itineraryDetail.html" class="btn btn-outline-orange w-100">NT$29,999 起
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="d-flex d-md-none justify-content-center align-content-center mt-24">
-                  <span class="w-px-8 h-px-8 bg-primary m-4 rounded"></span>
-                  <span class="w-px-8 h-px-8 border border-primary m-4 rounded"></span>
+                  <div class="swiper-pagination"></div>
                 </div>
 
               </div>
@@ -256,7 +254,7 @@
             </div>
 
             <!-- btn-more -->
-            <div class="d-flex d-lg-none justify-content-center align-items-center">
+            <div class="d-flex d-lg-none justify-content-center align-items-center" data-aos="fade-up">
               <a href="searchResult.html"
                 class="btn bg-primary-3 btn-hover1 rounded-pill fs-20 text-white py-16 px-24  mt-24">查看更多
                 <img src="../assets/images/iconArrowRight.svg" alt="iconArrowRight"
@@ -269,7 +267,7 @@
         <!-- 主題旅遊 -->
         <section class="d-flex justify-content-center align-items-stetch mt-96">
           <div class="container">
-            <div class="d-flex flex-column flex-md-row justify-content-between align-items-center">
+            <div class="d-flex flex-column flex-md-row justify-content-between align-items-center" data-aos="fade-up">
               <!-- title -->
               <h2 class="fs-32 fw-bold">
                 <span class="text-primary">●</span>
@@ -296,133 +294,129 @@
             </div>
 
             <!-- tabs -->
-            <div class="tab-content pt-60" id="pills-tabContent">
+            <div class="tab-content pt-60" id="pills-tabContent" data-aos="fade-up">
 
               <div class="tab-pane fade show active" id="pills-home1" role="tabpanel" aria-labelledby="pills-home-tab">
 
                 <!-- content -->
-                <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 g-4 slick-carousel">
-                  <div class="col">
-                    <div class="card border border-1 h-100">
-                      <img src="../assets/images/image05.png" class="card-img-top" alt="image05">
-                      <div class="card-body">
-                        <h5 class="card-title">賽福瑞六人成行</h5>
-                        <p class="card-text">安帕瓦螢火蟲五日</p>
+                <div class="swiper mySwiper swiper-scss">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="card border border-1 h-100">
+                        <img src="../assets/images/image05.png" class="card-img-top" alt="image05">
+                        <div class="card-body">
+                          <h5 class="card-title">賽福瑞六人成行</h5>
+                          <p class="card-text">安帕瓦螢火蟲五日</p>
+                        </div>
+                        <div class="card-footer border-0">
+                          <a href="itineraryDetail.html" class="btn btn-outline-orange w-100">NT$20,900 起
+                          </a>
+                        </div>
                       </div>
-                      <div class="card-footer border-0">
-                        <a href="itineraryDetail.html" class="btn btn-outline-orange w-100">NT$20,900 起
-                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="card border border-1 h-100">
+                        <img src="../assets/images/image06.png" class="card-img-top" alt="image06">
+                        <div class="card-body">
+                          <h5 class="card-title">美麗海水族館.波上宮4日</h5>
+                          <p class="card-text">贈送半潛水艇</p>
+                        </div>
+                        <div class="card-footer border-0">
+                          <a href="itineraryDetail.html" class="btn btn-outline-orange w-100">NT$24,900 起
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="card border border-1 h-100">
+                        <img src="../assets/images/image07.png" class="card-img-top" alt="image07">
+                        <div class="card-body">
+                          <h5 class="card-title">艾菲爾鐵塔景觀餐廳8日</h5>
+                          <p class="card-text">周杰倫 MV 莎瑪麗丹百貨</p>
+                        </div>
+                        <div class="card-footer border-0">
+                          <a href="itineraryDetail.html" class="btn btn-outline-orange w-100">NT$57,900 起
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="card border border-1 h-100">
+                        <img src="../assets/images/image08.png" class="card-img-top" alt="image08">
+                        <div class="card-body">
+                          <h5 class="card-title">五星中越峴港</h5>
+                          <p class="card-text">會安古鎮美山聖地</p>
+                        </div>
+                        <div class="card-footer border-0">
+                          <a href="itineraryDetail.html" class="btn btn-outline-orange w-100">NT$29,999 起
+                          </a>
+                        </div>
                       </div>
                     </div>
                   </div>
-                  <div class="col">
-                    <div class="card border border-1 h-100">
-                      <img src="../assets/images/image06.png" class="card-img-top" alt="image06">
-                      <div class="card-body">
-                        <h5 class="card-title">美麗海水族館.波上宮4日</h5>
-                        <p class="card-text">贈送半潛水艇</p>
-                      </div>
-                      <div class="card-footer border-0">
-                        <a href="itineraryDetail.html" class="btn btn-outline-orange w-100">NT$24,900 起
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col  d-none d-lg-flex">
-                    <div class="card border border-1 h-100">
-                      <img src="../assets/images/image07.png" class="card-img-top" alt="image07">
-                      <div class="card-body">
-                        <h5 class="card-title">艾菲爾鐵塔景觀餐廳8日</h5>
-                        <p class="card-text">周杰倫 MV 莎瑪麗丹百貨</p>
-                      </div>
-                      <div class="card-footer border-0">
-                        <a href="itineraryDetail.html" class="btn btn-outline-orange w-100">NT$57,900 起
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col  d-none d-lg-flex">
-                    <div class="card border border-1 h-100">
-                      <img src="../assets/images/image08.png" class="card-img-top" alt="image08">
-                      <div class="card-body">
-                        <h5 class="card-title">五星中越峴港</h5>
-                        <p class="card-text">會安古鎮美山聖地</p>
-                      </div>
-                      <div class="card-footer border-0">
-                        <a href="itineraryDetail.html" class="btn btn-outline-orange w-100">NT$29,999 起
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="d-flex d-md-none justify-content-center align-content-center mt-24">
-                  <span class="w-px-8 h-px-8 bg-primary m-4 rounded"></span>
-                  <span class="w-px-8 h-px-8 border border-primary m-4 rounded"></span>
+                  <div class="swiper-pagination"></div>
                 </div>
 
               </div>
               <div class="tab-pane fade" id="pills-profile1" role="tabpanel" aria-labelledby="pills-profile-tab">
 
                 <!-- content -->
-                <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 g-4 slick-carousel">
-                  <div class="col">
-                    <div class="card border border-1 h-100">
-                      <img src="../assets/images/image01.png" class="card-img-top" alt="image01">
-                      <div class="card-body">
-                        <h5 class="card-title">賽福瑞六人成行</h5>
-                        <p class="card-text">安帕瓦螢火蟲五日</p>
+                <div class="swiper mySwiper swiper-scss">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="card border border-1 h-100">
+                        <img src="../assets/images/image01.png" class="card-img-top" alt="image01">
+                        <div class="card-body">
+                          <h5 class="card-title">賽福瑞六人成行</h5>
+                          <p class="card-text">安帕瓦螢火蟲五日</p>
+                        </div>
+                        <div class="card-footer border-0">
+                          <a href="itineraryDetail.html" class="btn btn-outline-orange w-100">NT$20,900 起
+                          </a>
+                        </div>
                       </div>
-                      <div class="card-footer border-0">
-                        <a href="itineraryDetail.html" class="btn btn-outline-orange w-100">NT$20,900 起
-                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="card border border-1 h-100">
+                        <img src="../assets/images/image02.png" class="card-img-top" alt="image02">
+                        <div class="card-body">
+                          <h5 class="card-title">美麗海水族館.波上宮4日</h5>
+                          <p class="card-text">贈送半潛水艇</p>
+                        </div>
+                        <div class="card-footer border-0">
+                          <a href="itineraryDetail.html" class="btn btn-outline-orange w-100">NT$24,900 起
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="card border border-1 h-100">
+                        <img src="../assets/images/image03.png" class="card-img-top" alt="image03">
+                        <div class="card-body">
+                          <h5 class="card-title">艾菲爾鐵塔景觀餐廳8日</h5>
+                          <p class="card-text">周杰倫 MV 莎瑪麗丹百貨</p>
+                        </div>
+                        <div class="card-footer border-0">
+                          <a href="itineraryDetail.html" class="btn btn-outline-orange w-100">NT$57,900 起
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="card border border-1 h-100">
+                        <img src="../assets/images/image04.png" class="card-img-top" alt="image04">
+                        <div class="card-body">
+                          <h5 class="card-title">五星中越峴港</h5>
+                          <p class="card-text">會安古鎮美山聖地</p>
+                        </div>
+                        <div class="card-footer border-0">
+                          <a href="itineraryDetail.html" class="btn btn-outline-orange w-100">NT$29,999 起
+                          </a>
+                        </div>
                       </div>
                     </div>
                   </div>
-                  <div class="col">
-                    <div class="card border border-1 h-100">
-                      <img src="../assets/images/image02.png" class="card-img-top" alt="image02">
-                      <div class="card-body">
-                        <h5 class="card-title">美麗海水族館.波上宮4日</h5>
-                        <p class="card-text">贈送半潛水艇</p>
-                      </div>
-                      <div class="card-footer border-0">
-                        <a href="itineraryDetail.html" class="btn btn-outline-orange w-100">NT$24,900 起
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col d-none d-lg-flex">
-                    <div class="card border border-1 h-100">
-                      <img src="../assets/images/image03.png" class="card-img-top" alt="image03">
-                      <div class="card-body">
-                        <h5 class="card-title">艾菲爾鐵塔景觀餐廳8日</h5>
-                        <p class="card-text">周杰倫 MV 莎瑪麗丹百貨</p>
-                      </div>
-                      <div class="card-footer border-0">
-                        <a href="itineraryDetail.html" class="btn btn-outline-orange w-100">NT$57,900 起
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col d-none d-lg-flex">
-                    <div class="card border border-1 h-100">
-                      <img src="../assets/images/image04.png" class="card-img-top" alt="image04">
-                      <div class="card-body">
-                        <h5 class="card-title">五星中越峴港</h5>
-                        <p class="card-text">會安古鎮美山聖地</p>
-                      </div>
-                      <div class="card-footer border-0">
-                        <a href="itineraryDetail.html" class="btn btn-outline-orange w-100">NT$29,999 起
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="d-flex d-md-none justify-content-center align-content-center mt-24">
-                  <span class="w-px-8 h-px-8 bg-primary m-4 rounded"></span>
-                  <span class="w-px-8 h-px-8 border border-primary m-4 rounded"></span>
+                  <div class="swiper-pagination"></div>
                 </div>
 
               </div>
@@ -430,7 +424,7 @@
             </div>
 
             <!-- btn-more -->
-            <div class="d-flex d-lg-none justify-content-center align-items-center">
+            <div class="d-flex d-lg-none justify-content-center align-items-center" data-aos="fade-up">
               <a href="searchResult.html"
                 class="btn bg-primary-3 btn-hover1 rounded-pill fs-20 text-white py-16 px-24  mt-24">查看更多
                 <img src="../assets/images/iconArrowRight.svg" alt="iconArrowRight"
@@ -443,7 +437,7 @@
         <!-- 限時優惠 -->
         <section class="d-flex justify-content-center align-items-stetch mt-96 pb-108 bg-right-linear">
           <div class="container">
-            <div class="d-flex flex-column flex-md-row justify-content-between align-items-center">
+            <div class="d-flex flex-column flex-md-row justify-content-between align-items-center" data-aos="fade-up">
               <!-- title -->
               <h2 class="fs-32 fw-bold">
                 <span class="text-primary">●</span>
@@ -470,77 +464,76 @@
             </div>
 
             <!-- tabs -->
-            <div class="tab-content pt-60" id="pills-tabContent">
+            <div class="tab-content pt-60" id="pills-tabContent" data-aos="fade-up">
 
               <div class="tab-pane fade show active" id="pills-home2" role="tabpanel" aria-labelledby="pills-home-tab">
 
                 <!-- content -->
-                <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 g-4 slick-carousel">
-                  <div class="col">
-                    <div class="card border border-1 h-100">
-                      <img src="../assets/images/image09.png" class="card-img-top" alt="image09">
-                      <div class="card-body">
-                        <h5 class="card-title">賽福瑞六人成行</h5>
-                        <p class="card-text">安帕瓦螢火蟲五日</p>
+                <div class="swiper mySwiper swiper-scss">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="card border border-1 h-100">
+                        <img src="../assets/images/image09.png" class="card-img-top" alt="image09">
+                        <div class="card-body">
+                          <h5 class="card-title">賽福瑞六人成行</h5>
+                          <p class="card-text">安帕瓦螢火蟲五日</p>
+                        </div>
+                        <div class="card-footer border-0">
+                          <a href="itineraryDetail.html" class="btn btn-outline-orange w-100">NT$20,900 起
+                          </a>
+                        </div>
                       </div>
-                      <div class="card-footer border-0">
-                        <a href="itineraryDetail.html" class="btn btn-outline-orange w-100">NT$20,900 起
-                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="card border border-1 h-100">
+                        <img src="../assets/images/image10.png" class="card-img-top" alt="image10">
+                        <div class="card-body">
+                          <h5 class="card-title">美麗海水族館.波上宮4日</h5>
+                          <p class="card-text">贈送半潛水艇</p>
+                        </div>
+                        <div class="card-footer border-0">
+                          <a href="itineraryDetail.html" class="btn btn-outline-orange w-100">NT$24,900 起
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="card border border-1 h-100">
+                        <img src="../assets/images/image11.png" class="card-img-top" alt="image11">
+                        <div class="card-body">
+                          <h5 class="card-title">艾菲爾鐵塔景觀餐廳8日</h5>
+                          <p class="card-text">周杰倫 MV 莎瑪麗丹百貨</p>
+                        </div>
+                        <div class="card-footer border-0">
+                          <a href="itineraryDetail.html" class="btn btn-outline-orange w-100">NT$57,900 起
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="card border border-1 h-100">
+                        <img src="../assets/images/image12.png" class="card-img-top" alt="image12">
+                        <div class="card-body">
+                          <h5 class="card-title">五星中越峴港</h5>
+                          <p class="card-text">會安古鎮美山聖地</p>
+                        </div>
+                        <div class="card-footer border-0">
+                          <a href="itineraryDetail.html" class="btn btn-outline-orange w-100">NT$29,999 起
+                          </a>
+                        </div>
                       </div>
                     </div>
                   </div>
-                  <div class="col">
-                    <div class="card border border-1 h-100">
-                      <img src="../assets/images/image10.png" class="card-img-top" alt="image10">
-                      <div class="card-body">
-                        <h5 class="card-title">美麗海水族館.波上宮4日</h5>
-                        <p class="card-text">贈送半潛水艇</p>
-                      </div>
-                      <div class="card-footer border-0">
-                        <a href="itineraryDetail.html" class="btn btn-outline-orange w-100">NT$24,900 起
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col  d-none d-lg-flex">
-                    <div class="card border border-1 h-100">
-                      <img src="../assets/images/image11.png" class="card-img-top" alt="image11">
-                      <div class="card-body">
-                        <h5 class="card-title">艾菲爾鐵塔景觀餐廳8日</h5>
-                        <p class="card-text">周杰倫 MV 莎瑪麗丹百貨</p>
-                      </div>
-                      <div class="card-footer border-0">
-                        <a href="itineraryDetail.html" class="btn btn-outline-orange w-100">NT$57,900 起
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col  d-none d-lg-flex">
-                    <div class="card border border-1 h-100">
-                      <img src="../assets/images/image12.png" class="card-img-top" alt="image12">
-                      <div class="card-body">
-                        <h5 class="card-title">五星中越峴港</h5>
-                        <p class="card-text">會安古鎮美山聖地</p>
-                      </div>
-                      <div class="card-footer border-0">
-                        <a href="itineraryDetail.html" class="btn btn-outline-orange w-100">NT$29,999 起
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="d-flex d-md-none justify-content-center align-content-center mt-24">
-                  <span class="w-px-8 h-px-8 bg-primary m-4 rounded"></span>
-                  <span class="w-px-8 h-px-8 border border-primary m-4 rounded"></span>
+                  <div class="swiper-pagination"></div>
                 </div>
 
               </div>
               <div class="tab-pane fade" id="pills-profile2" role="tabpanel" aria-labelledby="pills-profile-tab">
 
-                <!-- content -->
-                <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 g-4 slick-carousel">
-                  <div class="col">
+              <!-- content -->
+              <div class="swiper mySwiper swiper-scss">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
                     <div class="card border border-1 h-100">
                       <img src="../assets/images/image01.png" class="card-img-top" alt="image01">
                       <div class="card-body">
@@ -553,7 +546,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col">
+                  <div class="swiper-slide">
                     <div class="card border border-1 h-100">
                       <img src="../assets/images/image02.png" class="card-img-top" alt="image02">
                       <div class="card-body">
@@ -566,7 +559,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col d-none d-lg-flex">
+                  <div class="swiper-slide">
                     <div class="card border border-1 h-100">
                       <img src="../assets/images/image03.png" class="card-img-top" alt="image03">
                       <div class="card-body">
@@ -579,7 +572,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col d-none d-lg-flex">
+                  <div class="swiper-slide">
                     <div class="card border border-1 h-100">
                       <img src="../assets/images/image04.png" class="card-img-top" alt="image04">
                       <div class="card-body">
@@ -593,18 +586,15 @@
                     </div>
                   </div>
                 </div>
-
-                <div class="d-flex d-md-none justify-content-center align-content-center mt-24">
-                  <span class="w-px-8 h-px-8 bg-primary m-4 rounded"></span>
-                  <span class="w-px-8 h-px-8 border border-primary m-4 rounded"></span>
-                </div>
+                <div class="swiper-pagination"></div>
+              </div>
 
               </div>
 
             </div>
 
             <!-- btn-more -->
-            <div class="d-flex d-lg-none justify-content-center align-items-center">
+            <div class="d-flex d-lg-none justify-content-center align-items-center" data-aos="fade-up">
               <a href="searchResult.html"
                 class="btn bg-primary-3 btn-hover1 rounded-pill fs-20 text-white py-16 px-24  mt-24">查看更多
                 <img src="../assets/images/iconArrowRight.svg" alt="iconArrowRight"
@@ -617,7 +607,9 @@
 
     <%- include('./layout/footer'); -%>
       <script type="module" src="../main.js"></script>
-      <script src="../assets/js/bannerSearch.js"></script>
+      <script src="../assets/js/bannerSearch.js">
+      </script>
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </body>
 
 </html>
