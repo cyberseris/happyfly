@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ORDER LIST</title>
+
+</head>
+
+<body>
+    <%- include('./layout/header'); -%>
+        <!-- 為了讓footer落在底下，main使用h-vh-100 -->
+        <main class="h-vh-100">
+            <!-- banner -->
+            <section class="bg-banner-img py-20 py-md-60">
+                <h2 class="ms-28 ms-md-60 border-start border-dark border-5 ps-8 ps-md-16 title-about">ORDER LIST</h2>
+            </section>
+
+            <section>
+                <div class="container">
+                    <div class="card mt-60">
+                        <div class="row g-0 bg-light">
+                            <div class="col-md-3">
+                                <div class="position-relative bg-left-imageFocus01 rounded-0 p-16">
+                                    <div class="text-white position-absolute bottom-0 w-100">
+                                        <h5>普吉悅槤酒店</h5>
+                                        <p>4 天直飛普吉島</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-7">
+                                <div class="card-body">
+                                    <p class="card-text">旅遊型態 : 團體</p>
+                                    <p class="card-text">地點 : 台北至普吉</p>
+                                    <p class="card-text">房型 : 成人2位</p>
+                                    <p class="card-text">日期 : 2023/07/05 - 2023/08/16</p>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="d-flex flex-column align-items-stretch h-100">
+                                    <a class="btn btn-orange h-50 d-flex justify-content-center align-items-center rounded-0"
+                                        href="num.html">查看更多</a>
+                                    <a class="btn btn-neutral-2 h-50 d-flex justify-content-center align-items-center rounded-0"
+                                        href="num.html">取消預約</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <%- include('./layout/footer'); -%>
+            <script type="module" src="../main.js"></script>
+</body>
+
+</html>

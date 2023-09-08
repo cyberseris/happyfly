@@ -1,4 +1,4 @@
-# HappyFly
+# Happy Fly 旅遊行程預約系統
 
 ## Node.js 版本
   - 專案的 Node.js 版本需為 v16 以上

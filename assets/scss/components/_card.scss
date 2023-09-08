@@ -1,0 +1,7 @@
+.card {
+    width: 50% !important;
+
+    @include pad {
+        width: 100% !important;
+    }
+}

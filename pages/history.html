@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>歷史訂單</title>
+    <%- include('./layout/headLink'); -%>
+    <script type="module" src="../main.js"></script>
+</head>
+<body class="vh-100">
+    <%- include('./layout/header') -%>
+    <%- include('./layout/bannerMember') -%>
+
+    <section class="history bg-right-linear flex-column ">
+        <div class="container vh-100 pb-1200">
+            <div class="d-flex">
+                <div>
+                    <%- include('./layout/sideBar') -%>
+                </div>
+
+                <div class="main w-100 d-flex flex-column justify-content-center align-items-center mt-32">
+                    <div class="historyOrders historyOrders-table">
+                        <h2 class="fs-32 text-center mb-48 fw-bold">歷史訂單</h2>
+                        <table class="table styled-table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">訂單編號</th>
+                                    <th scope="col">訂單日期</th>
+                                    <th scope="col">行程名稱</th>
+                                    <th scope="col">訂單內容</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="tableTitle">hex-1234567890</td>
+                                    <td>2023/07/07</td>
+                                    <td>芬蘭極光10日</td>
+                                    <td>
+                                        <form action="historyOrderDetail.html">
+                                            <input type="hidden" name="orderId">
+                                            <button type="submit" class="btn btn-primary text-white me-24">查詢更多</button>
+                                        </form>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="tableTitle">hex-1234567890</td>
+                                    <td>2023/07/07</td>
+                                    <td>芬蘭極光10日</td>
+                                    <td>
+                                        <form action="historyOrderDetail.html">
+                                            <input type="hidden" name="orderId">
+                                            <button type="submit" class="btn btn-primary text-white me-24">查詢更多</button>
+                                        </form>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="tableTitle">hex-1234567890</td>
+                                    <td>2023/07/07</td>
+                                    <td>芬蘭極光10日</td>
+                                    <td>
+                                        <form action="historyOrderDetail.html">
+                                            <input type="hidden" name="orderId" value="123">
+                                            <button type="submit" class="btn btn-primary text-white me-24">查詢更多</button>
+                                        </form>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="tableTitle">hex-1234567890</td>
+                                    <td>2023/07/07</td>
+                                    <td>芬蘭極光10日</td>
+                                    <td>
+                                        <form action="historyOrderDetail.html">
+                                            <input type="hidden" name="orderId" value="123">
+                                            <button type="submit" class="btn btn-primary text-white me-24">查詢更多</button>
+                                        </form>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                </div>     
+                
+            </div>
+        </div>
+        <div class="w-100">
+            <%- include('./layout/footer'); -%>
+        </div>
+        
+    </section>
+
+    
+</body>
+</html>

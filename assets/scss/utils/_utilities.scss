@@ -1,86 +1,134 @@
 // Utilities
 
-$utilities: () !default;
+
+$utilities: (
+  ) !default;
 // stylelint-disable-next-line scss/dollar-variable-default
-$utilities: map-merge(
-  (
-    "font-size": (
-      rfs: false,
-      property: font-size,
-      class: fs,
-      responsive:true,
-      values: $font-sizes
-    ),
-    "bg-opacity": (
-      css-var: true,
-      class: bg-opacity,
-      responsive:true,
-      values: (
-        10: .1,
-        25: .25,
-        30:.3,
-        50: .5,
-        75: .75,
-        100: 1
-      )
-    ),
-    "cursor": (
-      property: cursor,
-      values: (
-        pointer:pointer
-      )
-    ),
-    "top": (
-      property: top,
-      responsive:true,
-      values: (
-        0: 0,
-        30:30%,
-        40:40%,
-        50: 50%,
-        100: 100%
-      )
-    ),
-    "width": (
-      property: width,
-      class: w,
-      responsive:true,
-      values: (
-        10:10%,
-        25: 25%,
-        40:40%,
-        50: 50%,
-        75: 75%,
-        100: 100%,
-        auto: auto
-      )
-    ),
-    "height": (
-      property: height,
-      class: h,
-      values: (
-        10:10%,
-        25: 25%,
-        50: 50%,
-        75: 75%,
-        100: 100%,
-        auto: auto
-      )
-    ),
-    "rounded": (
-      property: border-radius,
-      responsive:true,
-      class: rounded,
-      values: (
-        null: $border-radius,
-        0: 0,
-        1: $border-radius-sm,
-        2: $border-radius,
-        3: $border-radius-lg,
-        circle: 50%,
-        pill: $border-radius-pill
-      )
-    )
-  ),
-  $utilities
+$utilities: map-merge(("font-size": (rfs: false,
+        property: font-size,
+        class: fs,
+        responsive:true,
+        values: $font-sizes),
+      "bg-opacity": (css-var: true,
+        class: bg-opacity,
+        values: (10: .1,
+          25: .25,
+          30:.3,
+          50: .5,
+          75: .75,
+          100: 1)),
+      "text-shadow": (property: text-shadow,
+        rfs: false,
+        class: text-shadow,
+        values: (1: 0 4px 4px rgba(0, 0, 0, 0.75))),
+      "w-px": (property: width,
+        class: w-px,
+        values: (8: 8px, 20: 20px,
+          26: 26px,
+          50: 50px, 90: 90px,
+          100: 100px,
+          150: 150px)),
+      "width": (property: width,
+        class: w,
+        responsive:true,
+        values: (10:10%,
+          25: 25%,
+          40:40%,
+          50: 50%,
+          75: 75%,
+          100: 100%,
+          auto: auto)),
+      "h-px": (property: height,
+        class: h-px,
+        values: (8: 8px, 20:20px,
+          50:50px, 90:90px, 100:100px)),
+      "h-vh": (property: height,
+        class: h-vh,
+        values: (50: 50vh, 80:80vh,
+          100:100vh)),
+      "height": (property: height,
+        class: h,
+        values: (10:10%,
+          25: 25%,
+          50: 50%,
+          75: 75%,
+          100: 100%,
+          auto: auto)),
+      "cursor": (property: cursor,
+        values: (pointer:pointer)),
+      "top": (property: top,
+        responsive:true,
+        values: (0: 0,
+          30:30%,
+          40:40%,
+          50: 50%,
+          100: 100%)),
+      "rounded": (property: border-radius,
+        responsive:true,
+        class: rounded,
+        values: (null: $border-radius,
+          0: 0,
+          1: $border-radius-sm,
+          2: $border-radius,
+          3: $border-radius-lg,
+          circle: 50%,
+          pill: $border-radius-pill ))),
+    $utilities
 );
+
+
+.shadow-style {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.fw-med {
+  font-weight: 500 !important;
+}
+
+.f-sans {
+  font-family: 'Noto Sans TC' !important;
+}
+
+
+.w-100-50 {
+  width: 50% !important;
+
+  @include pc {
+    width: 100% !important;
+  }
+}
+
+.fs-16-20 {
+  font-size: 20px;
+
+  @include pad {
+    font-size: 16px;
+  }
+}
+
+.border-radius-50 {
+  border-radius: 50% !important;
+  overflow: hidden !important;
+}
+
+.bg-gray-500 {
+  background: $gray-500;
+}
+
+.minH-100 {
+  min-height: 100vh;
+}
+
+.btn-hover:hover {
+  color: white;
+}
+
+.h-168 {
+  height: 168px !important;
+}
+
+.pb-1200 {
+  @include pad {
+    padding-bottom: 1200px;
+  }
+}

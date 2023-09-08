@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>訂單查詢</title>
+    <%- include('./layout/headLink'); -%>
+    <script type="module" src="../main.js"></script>
+</head>
+<body>
+    <%- include('./layout/header') -%>
+    <%- include('./layout/bannerMember') -%>
+    
+    <section class="orderList bg-right-linear">
+        <div class="container">
+            <div class="d-flex">
+                <div>
+                    <%- include('./layout/sideBar') -%>
+                </div>
+
+                <div class="main w-100 mt-32 d-flex justify-content-center">               
+                    <div>
+                        <h1 class="fs-32 text-center mb-48 fw-bold">目前訂單</h1>
+                        <div class="card mb-24 shadow">
+                            <div class="row">
+                              <div class="col-md-3 ">
+                                <img src="../assets/images/image09.png" class="img-fluid rounded-start w-100 h-100 " alt="東京 png">
+                              </div>
+                              <div class="col-md-4">
+                                <div class="card-body">
+                                    <ul class="h-100">
+                                        <li>旅遊型態 : 團體</li>
+                                        <li>地點 : 台北至東京</li>
+                                        <li>房型 : 成人2位</li>
+                                        <li>日期 : 2023/07/05 - 2023/08/16</li>
+                                    </ul>
+                                </div>
+                              </div>
+                              <div class="col-md-3">
+                                <div class="card-body">
+                                    <div class="mb-16 d-flex flex-md-column justiyf-content-center align-items-center">
+                                        <a href="orderDetailNum-1.html" class="btn btn-primary text-white mb-md-24 me-24 me-md-0 mx-auto">查詢更多</a>
+                                        <a href="#" class="btn btn-primary text-white mx-auto me-md-0">取消預約</a>
+                                    </div>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="card mb-24 shadow">
+                            <div class="row g-0 ">
+                              <div class="col-md-3">
+                                <img src="../assets/images/image03.png" class="img-fluid rounded-start w-100 h-100" alt="法國 png">
+                              </div>
+                              <div class="col-md-4">
+                                <div class="card-body">
+                                    <ul class="h-100">
+                                        <li>旅遊型態 : 團體</li>
+                                        <li>地點 : 台北至法國</li>
+                                        <li>房型 : 成人2位</li>
+                                        <li>日期 : 2023/07/05 - 2023/08/16</li>
+                                    </ul>
+                                </div>
+                              </div>
+                              <div class="col-md-3">
+                                <div class="card-body">
+                                    <div class="mb-16 d-flex flex-md-column justiyf-content-center align-items-center">
+                                        <a href="orderDetailNum-2.html" class="btn btn-primary text-white mb-md-24 me-24 me-md-0 mx-auto">查詢更多</a>
+                                        <a href="#" class="btn btn-primary text-white mx-auto me-md-0">取消預約</a>
+                                    </div>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="card mb-24 shadow">
+                            <div class="row g-0">
+                              <div class="col-md-3">
+                                <img src="../assets/images/image05.png" class="img-fluid rounded-start  w-100 h-100" alt="賽福瑞.png">
+                              </div>
+                              <div class="col-md-4">
+                                <div class="card-body">
+                                    <ul class="h-100">
+                                        <li>旅遊型態 : 團體</li>
+                                        <li>地點 : 台北至賽福瑞</li>
+                                        <li>房型 : 成人2位</li>
+                                        <li>日期 : 2023/07/05 - 2023/08/16</li>
+                                    </ul>
+                                </div>
+                              </div>
+                              <div class="col-md-3">
+                                <div class="card-body">
+                                    <div class="mb-16 d-flex flex-md-column justiyf-content-center align-items-center">
+                                      <a href="orderDetailNum-3.html" class="btn btn-primary text-white mb-md-24 me-24 me-md-0 mx-auto">查詢更多</a>
+                                      <a href="#" class="btn btn-primary text-white mx-auto me-md-0">取消預約</a>
+                                    </div>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                
+            </div>
+        </div>
+    </section>
+
+    <%- include('./layout/footer'); -%>
+</body>
+</html>

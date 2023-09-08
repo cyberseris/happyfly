@@ -1,25 +1,40 @@
 @import 'https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap';
 @import 'https://fonts.googleapis.com/css?family=Material+Icons%7CMaterial+Icons+Outlined%7CMaterial+Icons+Two+Tone%7CMaterial+Icons+Round%7CMaterial+Icons+Sharp';
 
-@import 'animate.css/animate.css';
 
+@import 'animate.css/animate.css';
 @import "../../node_modules/bootstrap/scss/functions";
 @import './utils/variables';
+@import './utils/mixin';
 @import './utils/utilities';
 @import './utils/base';
+@import './base/reset';
 @import "../../node_modules/bootstrap";
 
+@import './components/table';
+@import './components/progress';
+
+@import './utils/helpers';
+
 @import './layout/header';
+@import './layout/background';
+@import './layout/sideBar';
 @import './layout/footer';
-@import './pages/index';
+@import './layout/memberBanner';
+
+
+@import './pages/index'; //好想下班
+@import './vendors/daterangepicker/daterangepicker'; //好想下班
+@import './pages/shoppingCart'; //好想下班
+@import './pages/payment'; //好想下班
 @import './pages/login';
-@import './pages/pwdForgot';
 @import './pages/service';
 @import './pages/about';
+@import './pages/paymentInfo';
+@import './pages/pwdForgot';
 @import './pages/register';
-
-@import './pages/modal';
-
 @import './pages/blog';
 
+
+@import './pages/modal'
 

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>付款資料填寫</title>
+    <%- include('./layout/headLink'); -%>
+    <script type="module" src="../main.js"></script>
+</head>
+<body>
+    <%- include('./layout/header') -%>
+    <%- include('./layout/bannerMember') -%>
+    
+    <section class="paymentInfo vh-100">
+        <div class="container">
+            <div class="d-flex">
+                <div>
+                    <%- include('./layout/sideBar') -%>
+                </div>
+
+                <div class="main w-100 d-flex flex-column align-items-center">
+                    <div class="w-100 d-flex flex-column align-items-center mb-64">
+                        <h1 class="fs-32 mb-24 pb-24 mt-32 w-100 text-center">請填寫付款資料</h1>  
+    
+                        <form action="#" class="w-50 needs-validation" novalidate>  
+                             <div class="row mb-16 d-flex align-items-center">
+                                <div class="input-group mb-16">
+                                    <span class="input-group-text" id="bankName">銀行</span>
+                                    <input type="text" class="form-control" id="bankName" placeholder="000 富邦" aria-label="bankName" aria-describedby="bankName" required>
+                                    <span id="bankNameFeedback" class="invalid-feedback">請輸入銀行名稱</span>
+                                </div>
+                                <div class="input-group mb-16">
+                                    <span class="input-group-text" id="nickName">暱稱</span>
+                                    <input type="text" class="form-control" placeholder="六角學院學員" aria-label="nickName" aria-describedby="nickName" required>
+                                    <span id="nickNameFeedback" class="invalid-feedback">請輸入匿稱</span>
+                                </div>
+                                <div class="input-group mb-16">
+                                    <span class="input-group-text" id="bankAccount">銀行帳號</span>
+                                    <input type="text" class="form-control" id="bankAccount" placeholder="請輸入銀行帳號"  aria-label="bankAccount" aria-describedby="bankAccount" required>
+                                    <span id="bankAccountFeedback" class="invalid-feedback">請輸入銀行帳號</span>
+                                </div>
+                                <div class="input-group mb-16">
+                                    <span class="input-group-text" id="date">日期</span>
+                                    <input type="date" class="form-control" id="date" aria-label="date" aria-describedby="date" required>
+                                    <span id="dateFeedback" class="invalid-feedback">請輸入日期</span>
+                                </div>
+                                <div class="input-group mb-16">
+                                    <span class="input-group-text" id="securityCode">安全碼</span>
+                                    <input type="text" class="form-control" id="securityCode" placeholder="請輸入安全碼" aria-label="securityCode" aria-describedby="securityCode" required>
+                                    <span id="securityCodeFeedback" class="invalid-feedback">請輸入安全碼</span>
+                                </div>
+                                <div class="d-flex justify-content-center"><button type="submit" class="btn btn-primary text-white me-24">送出</button><button type="reset" class="btn btn-primary text-white">清除</button></div>
+                        </form>
+                    </div>
+    
+                    <div class="mt-64">
+                        <h2 class="fs-32 text-center mb-24">付款資訊列表</h2>
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">銀行</th>
+                                    <th scope="col">暱稱</th>
+                                    <th scope="col">帳號</th>
+                                    <th scope="col">日期</th>
+                                    <th scope="col">安全碼</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>富邦</td>
+                                    <td>六角學院學員</td>
+                                    <td>123***456</td>
+                                    <td>2023/07/07</td>
+                                    <td>***</td>
+                                    <td>
+                                        <form action="#">
+                                            <input type="hidden" name="paymentId">
+                                            <button type="submit" class="btn btn-primary text-white me-24">刪除</button>
+                                        </form>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                
+            </div>
+        </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script>
+      $('.needs-validation').each(function(index) {
+            var form = $(this);
+            form.on('submit', function(e) {
+                e.preventDefault();
+                form.addClass('was-validated');
+
+                if(form[0].checkValidity()){
+                    window.open("member.html");
+                } 
+
+            });
+        });
+    </script>
+
+
+    <%- include('./layout/footer'); -%>
+</body>
+</html>

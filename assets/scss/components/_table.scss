@@ -1,0 +1,76 @@
+.styled-table {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+
+    thead tr {
+        font-size: 20px;
+        /* background-color: #009879 !important; */
+        color: #ffffff !important;
+        background-color: $primary !important;
+    }
+
+    th,
+    td {
+        padding: 12px 15px;
+        font-size: 18px;
+    }
+
+    tbody tr:nth-of-type(odd) {
+        background-color: white !important;
+    }
+
+    tbody tr:nth-of-type(even) {
+        background-color: #f3f3f3 !important;
+    }
+
+    /* tbody tr:last-of-type {
+        border-bottom: 2px solid #009879 !important;
+    } */
+}
+
+
+
+@include pad {
+    .tableTitle {
+        font-weight: bold;
+        color: $white;
+        background: $primary !important;
+    }
+
+    .styled-table {
+        thead {
+            display: none;
+        }
+
+        border-collapse:separate;
+        border-spacing: 0 1em;
+    }
+
+    tbody {
+        tr {
+            margin-bottom: 24px !important;
+
+            td {
+                display: block;
+                text-align: center;
+            }
+        }
+    }
+}
+
+.historyOrders-table {
+    width: 80%;
+
+    table thead tr {
+        background: lightgray;
+    }
+}
+
+.memberInfo-table {
+    table {
+        height: 60%;
+
+        tr td {
+            border: 0;
+        }
+    }
+}
