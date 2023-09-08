@@ -66,10 +66,6 @@ $utilities: map-merge(("font-size": (rfs: false,
   }
 }
 
-.minH-900 {
-  min-height: 900px;
-}
-
 .border-radius-50 {
   border-radius: 50% !important;
   overflow: hidden !important;
@@ -81,4 +77,26 @@ $utilities: map-merge(("font-size": (rfs: false,
 
 .minH-100 {
   min-height: 100vh;
+}
+
+.btn-hover:hover {
+  color: white;
+}
+
+.h-168 {
+  height: 168px !important;
+}
+
+.vh-pad-90 {
+  height: 100vh;
+
+  @include pad {
+    height: 90vh !important;
+  }
+}
+
+.pb-1200 {
+  @include pad {
+    padding-bottom: 1200px;
+  }
 }
