@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>會員註冊</title>
+</head>
+
+<body>
+    <%- include('./layout/header'); -%>
+
+    <main>
+        <section class="d-flex justify-content-center align-items-center py-96 bg-primary-3">
+            <div class="container">
+                <div class="d-flex justify-content-center align-items-center">
+
+                    <div>
+                        <!-- title -->
+                        <h2 class="fs-32 fw-bold text-center">
+                            會員註冊
+                        </h2>
+                        <!-- form -->
+                        <form action="#" class="mt-20 needs-validation" novalidate>
+
+                            <div class="row mb-16">
+                                <label for="nameEn" class="col-2 form-label input-group-text border-0 bg-transparent">中文姓</label>
+                                <div class="col-4">
+                                  <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="EX:王" aria-label="EX:王" id="nameEn" required>
+                                    <span id="nameEnFeedback" class="invalid-feedback">請輸入中文名</span>
+                                  </div>
+                                </div>
+                                <label for="nameEn" class="col-1 form-label input-group-text border-0 bg-transparent">名</label>
+                                <div class="col-5">
+                                  <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="EX:小東" aria-label="EX:小東" id="nameEn" required>
+                                    <span id="nameEnFeedback" class="invalid-feedback">請輸入名</span>
+                                  </div>
+                                </div>
+                            </div>
+
+                            <div class="row mb-16">
+                                <label for="nameEn" class="col-3 form-label input-group-text border-0 bg-transparent">英文名</label>
+                                <div class="col-9">
+                                  <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="請輸入英文名" aria-label="請輸入英文名" id="nameEn" required>
+                                    <span id="nameEnFeedback" class="invalid-feedback">請輸入英文名</span>
+                                  </div>
+                                </div>
+                            </div>
+                            
+                            <div class="row mb-16">
+                                <span class="col-3">性別</span>
+                                <div class="col-9">
+                                    <div class="input-group">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="radio-stacked"
+                                                id="female" required>
+                                            <label class="form-check-label me-16" for="female">
+                                                女
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="radio-stacked"
+                                                id="male" required>
+                                            <label class="form-check-label" for="male">
+                                                男
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mb-16">
+                                <label for="personalId" class="col-3 form-label input-group-text border-0 bg-transparent">身分證</label>
+                                <div class="col-9">
+                                  <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="EX:A5641684684" aria-label="EX:A5641684684" id="personalId" required>
+                                    <span id="personalIdFeedback" class="invalid-feedback">請輸入身分證</span>
+                                  </div>
+                                </div>
+                            </div>
+
+                            <div class="row mb-16">
+                                <label for="address" class="col-3 form-label input-group-text border-0 bg-transparent">地址</label>
+                                <div class="col-9">
+                                  <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="請輸入地址" aria-label="請輸入地址" id="address" required>
+                                    <span id="addressFeedback" class="invalid-feedback">請輸入地址</span>
+                                  </div>
+                                </div>
+                              </div>
+        
+                              <div class="row mb-16">
+                                <label for="tel" class="col-3 form-label input-group-text border-0 bg-transparent">電話</label>
+                                <div class="col-9">
+                                  <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="EX:0912345678" aria-label="請輸入電話" id="address" required>
+                                    <span id="telFeedback" class="invalid-feedback">請輸入電話</span>
+                                  </div>
+                                </div>
+                              </div>
+        
+                              <div class="row mb-16">
+                                <label for="mail" class="col-3 form-label input-group-text border-0 bg-transparent">MAIL</label>
+                                <div class="col-9">
+                                  <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="EX:hexschool@test.com" aria-label="mail" id="address" required>
+                                    <span id="mailFeedback" class="invalid-feedback">請輸入 mail</span>
+                                  </div>
+                                </div>
+                              </div>
+        
+                              <div class="row mb-16">
+                                <label for="dietaryRestrict" class="col-3 form-label input-group-text border-0 bg-transparent">飲食限制</label>
+                                <div class="col-9">
+                                  <div class="input-group">
+                                    <textarea class="form-control" placeholder="EX:葷素皆可" aria-label="dietaryRestrict" id="address" required></textarea>
+                                    <span id="dietaryRestrictFeedback" class="invalid-feedback">請輸入飲食限制</span>
+                                  </div>
+                                </div>
+                              </div>
+        
+                              <div class="row mb-16">
+                                <label for="emergencyName" class="col-4 col-md-3 form-label input-group-text border-0 bg-transparent">緊急聯絡姓名</label>
+                                <div class="col-8 col-md-9">
+                                  <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="請輸入緊急聯絡姓名" aria-label="emergencyName" id="emergencyName" required>
+                                    <span id="emergencyNameFeedback" class="invalid-feedback">請輸入緊急聯絡姓名</span>
+                                  </div>
+                                </div>
+                              </div>
+        
+                              <div class="row mb-16">
+                                <label for="emergencyTel" class="col-4 col-md-3 form-label input-group-text border-0 bg-transparent">緊急聯絡電話</label>
+                                <div class="col-8 col-md-9">
+                                  <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="請輸入緊急聯絡電話" aria-label="emergencyTel" id="emergencyTel" required>
+                                    <span id="emergencyTelFeedback" class="invalid-feedback">請輸入緊急聯絡電話</span>
+                                  </div>
+                                </div>
+                              </div>
+                              
+                              <div class="row mb-16">
+                                <label for="emergencyRelation" class="col-4 col-md-3 form-label input-group-text border-0 bg-transparent flex-wrap fs-16">緊急聯絡關係</label>
+                                  <div class="col-8 col-md-9">
+                                      <div class="input-group">
+                                          <select class="form-select" aria-label="緊急聯絡關係" required>
+                                              <option selected disabled value="EX:母女關係">EX:母女關係</option>
+                                              <option value="1">母女</option>
+                                              <option value="2">父子</option>
+                                              <option value="3">兄弟</option>
+                                              <option value="4">姊妹</option>
+                                              <option value="5">配偶</option>
+                                              <option value="6">子女</option>
+                                          </select>
+                                      </div>
+                                  </div>
+                              </div>
+                            <div class="d-flex justify-content-center align-items-center">
+                                <button class="btn bg-light btn-hover1 me-16" type="submit">確定</button>
+                                <button class="btn bg-light btn-hover1 me-16" type="reset">清除</button>
+                            </div>
+                        </form>
+
+     
+                    </div>                    
+                </div>
+        </section>
+
+    </main>
+
+
+        <%- include('./layout/footer'); -%>
+
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script>
+      $('.needs-validation').each(function(index) {
+            var form = $(this);
+            form.on('submit', function(e) {
+                e.preventDefault();
+                form.addClass('was-validated');
+
+                if(form[0].checkValidity()){
+                    window.open("index.html");
+                } 
+
+            });
+        });
+    </script>
+
+    <script type="module" src="../main.js"></script>
+
+</body>
+
+</html>
