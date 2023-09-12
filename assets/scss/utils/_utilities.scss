@@ -123,6 +123,10 @@ $utilities: map-merge(("font-size": (rfs: false,
   color: white;
 }
 
+.a-hover:hover {
+  opacity: 0.8;
+}
+
 .h-168 {
   height: 168px !important;
 }
