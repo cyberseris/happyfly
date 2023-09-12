@@ -45,6 +45,11 @@ export default defineConfig({
             fileURLToPath(new URL(file, import.meta.url)),
           ])
       ),
+      output:{
+        assetFileNames: 'assets/[name].[ext]',
+        chunkFileNames: 'assets/[name].js',
+        entryFileNames: 'assets/[name].js'
+      }
     },
     outDir: 'dist',
   },
