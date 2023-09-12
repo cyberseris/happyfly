@@ -2,7 +2,7 @@
     border: 1px solid #000;
     width: 32px;
     height: 32px;
-    background-color: #f3f1e5;
+    background-color: $primary-2;
     z-index: 1;
 }
 
@@ -18,7 +18,7 @@
 
 .number-active {
     background-color: #000;
-    color: #FBFF22;
+    color: $white;
 }
 
 

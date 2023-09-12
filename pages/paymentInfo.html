@@ -11,7 +11,7 @@
     <%- include('./layout/header') -%>
     <%- include('./layout/bannerMember') -%>
     
-    <section class="paymentInfo vh-100">
+    <section class="paymentInfo vh-100 bg-primary-3 w-100">
         <div class="container">
             <div class="d-flex">
                 <div>
@@ -22,7 +22,7 @@
                     <div class="w-100 d-flex flex-column align-items-center mb-64">
                         <h1 class="fs-32 mb-24 pb-24 mt-32 w-100 text-center">請填寫付款資料</h1>  
     
-                        <form action="#" class="w-50 needs-validation" novalidate>  
+                        <form action="orderList.html" class="w-50 needs-validation" novalidate>  
                              <div class="row mb-16 d-flex align-items-center">
                                 <div class="input-group mb-16">
                                     <span class="input-group-text" id="bankName">銀行</span>
@@ -55,7 +55,7 @@
     
                     <div class="mt-64">
                         <h2 class="fs-32 text-center mb-24">付款資訊列表</h2>
-                        <table class="table">
+                        <table class="table styled-table">
                             <thead>
                                 <tr>
                                     <th scope="col">銀行</th>
@@ -99,7 +99,7 @@
                 form.addClass('was-validated');
 
                 if(form[0].checkValidity()){
-                    window.open("member.html");
+                    window.open("orderList.html");
                 } 
 
             });

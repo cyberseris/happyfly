@@ -132,3 +132,12 @@ $utilities: map-merge(("font-size": (rfs: false,
     padding-bottom: 1200px;
   }
 }
+
+.img-hover {
+  width: 100%;
+  transition: 0.3s ease-in;
+
+  &:hover {
+    transform: scale(1.2);
+  }
+}
