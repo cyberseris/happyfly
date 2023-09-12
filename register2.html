@@ -142,186 +142,165 @@
 
 <script src="../assets/js/header.js"></script>
 
-        <div class="container">
+    <main>
+        <section class="d-flex justify-content-center align-items-center py-96 bg-primary-3">
+            <div class="container">
+                <div class="d-flex justify-content-center align-items-center">
 
-            <h2 class="text-center my-48 fs-36 fs-md-48">會員註冊</h2>
+                    <div>
+                        <!-- title -->
+                        <h2 class="fs-32 fw-bold text-center">
+                            會員註冊
+                        </h2>
+                        <!-- form -->
+                        <form action="#" class="mt-20 needs-validation" novalidate>
 
-
-            <form action="#" class="fs-16 fs-md-20 needs-validation"  novalidate>
-                <div class="row">
-
-                    <div class="col-12 col-md-6 mb-36">
-
-                        <div class="row">
-
-                            <div class="col-4 col-md-6 d-flex align-items-center justify-content-center">
-                                <label class="text-nowrap" for="firstname_che">中文姓</label>
+                            <div class="row mb-16">
+                                <label for="nameEn" class="col-2 form-label input-group-text border-0 bg-transparent">中文姓</label>
+                                <div class="col-4">
+                                  <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="EX:王" aria-label="EX:王" id="nameEn" required>
+                                    <span id="nameEnFeedback" class="invalid-feedback">請輸入中文名</span>
+                                  </div>
+                                </div>
+                                <label for="nameEn" class="col-1 form-label input-group-text border-0 bg-transparent">名</label>
+                                <div class="col-5">
+                                  <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="EX:小東" aria-label="EX:小東" id="nameEn" required>
+                                    <span id="nameEnFeedback" class="invalid-feedback">請輸入名</span>
+                                  </div>
+                                </div>
                             </div>
 
-                            <div class="col-8 col-md-6 ">
-                                <input class="form-control" type="text" name="firstname_che" placeholder="請輸入中文"
-                                    id="firstname_che">
+                            <div class="row mb-16">
+                                <label for="nameEn" class="col-3 form-label input-group-text border-0 bg-transparent">英文名</label>
+                                <div class="col-9">
+                                  <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="請輸入英文名" aria-label="請輸入英文名" id="nameEn" required>
+                                    <span id="nameEnFeedback" class="invalid-feedback">請輸入英文名</span>
+                                  </div>
+                                </div>
+                            </div>
+                            
+                            <div class="row mb-16">
+                                <span class="col-3">性別</span>
+                                <div class="col-9">
+                                    <div class="input-group">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="radio-stacked"
+                                                id="female" required>
+                                            <label class="form-check-label me-16" for="female">
+                                                女
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="radio-stacked"
+                                                id="male" required>
+                                            <label class="form-check-label" for="male">
+                                                男
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mb-16">
+                                <label for="personalId" class="col-3 form-label input-group-text border-0 bg-transparent">身分證</label>
+                                <div class="col-9">
+                                  <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="EX:A5641684684" aria-label="EX:A5641684684" id="personalId" required>
+                                    <span id="personalIdFeedback" class="invalid-feedback">請輸入身分證</span>
+                                  </div>
+                                </div>
                             </div>
 
-                        </div>
-
-                    </div>
-
-                    <div class="col-12 col-md-6 mb-36">
-                        <div class="row ">
-                            <div class="col-4 col-md-4  d-flex align-items-center justify-content-center">
-                                <label for="firstname_che">名</label>
+                            <div class="row mb-16">
+                                <label for="address" class="col-3 form-label input-group-text border-0 bg-transparent">地址</label>
+                                <div class="col-9">
+                                  <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="請輸入地址" aria-label="請輸入地址" id="address" required>
+                                    <span id="addressFeedback" class="invalid-feedback">請輸入地址</span>
+                                  </div>
+                                </div>
+                              </div>
+        
+                              <div class="row mb-16">
+                                <label for="tel" class="col-3 form-label input-group-text border-0 bg-transparent">電話</label>
+                                <div class="col-9">
+                                  <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="EX:0912345678" aria-label="請輸入電話" id="address" required>
+                                    <span id="telFeedback" class="invalid-feedback">請輸入電話</span>
+                                  </div>
+                                </div>
+                              </div>
+        
+                              <div class="row mb-16">
+                                <label for="mail" class="col-3 form-label input-group-text border-0 bg-transparent">MAIL</label>
+                                <div class="col-9">
+                                  <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="EX:hexschool@test.com" aria-label="mail" id="address" required>
+                                    <span id="mailFeedback" class="invalid-feedback">請輸入 mail</span>
+                                  </div>
+                                </div>
+                              </div>
+        
+                              <div class="row mb-16">
+                                <label for="dietaryRestrict" class="col-3 form-label input-group-text border-0 bg-transparent">飲食限制</label>
+                                <div class="col-9">
+                                  <div class="input-group">
+                                    <textarea class="form-control" placeholder="EX:葷素皆可" aria-label="dietaryRestrict" id="address" required></textarea>
+                                    <span id="dietaryRestrictFeedback" class="invalid-feedback">請輸入飲食限制</span>
+                                  </div>
+                                </div>
+                              </div>
+        
+                              <div class="row mb-16">
+                                <label for="emergencyName" class="col-4 col-md-3 form-label input-group-text border-0 bg-transparent">緊急聯絡姓名</label>
+                                <div class="col-8 col-md-9">
+                                  <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="請輸入緊急聯絡姓名" aria-label="emergencyName" id="emergencyName" required>
+                                    <span id="emergencyNameFeedback" class="invalid-feedback">請輸入緊急聯絡姓名</span>
+                                  </div>
+                                </div>
+                              </div>
+        
+                              <div class="row mb-16">
+                                <label for="emergencyTel" class="col-4 col-md-3 form-label input-group-text border-0 bg-transparent">緊急聯絡電話</label>
+                                <div class="col-8 col-md-9">
+                                  <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="請輸入緊急聯絡電話" aria-label="emergencyTel" id="emergencyTel" required>
+                                    <span id="emergencyTelFeedback" class="invalid-feedback">請輸入緊急聯絡電話</span>
+                                  </div>
+                                </div>
+                              </div>
+                              
+                              <div class="row mb-16">
+                                <label for="emergencyRelation" class="col-4 col-md-3 form-label input-group-text border-0 bg-transparent flex-wrap fs-16">緊急聯絡關係</label>
+                                  <div class="col-8 col-md-9">
+                                      <div class="input-group">
+                                          <select class="form-select" aria-label="緊急聯絡關係" required>
+                                              <option selected disabled value="EX:母女關係">EX:母女關係</option>
+                                              <option value="1">母女</option>
+                                              <option value="2">父子</option>
+                                              <option value="3">兄弟</option>
+                                              <option value="4">姊妹</option>
+                                              <option value="5">配偶</option>
+                                              <option value="6">子女</option>
+                                          </select>
+                                      </div>
+                                  </div>
+                              </div>
+                            <div class="d-flex justify-content-center align-items-center">
+                                <button class="btn bg-light btn-hover1 me-16" type="submit">確定</button>
+                                <button class="btn bg-light btn-hover1 me-16" type="reset">清除</button>
                             </div>
-                            <div class="col-8 col-md-6">
-                                <input class="form-control" type="text" name="lastname_che" placeholder="請輸入中文"
-                                    id="lastname_che">
-                            </div>
-                        </div>
-                    </div>
+                        </form>
 
-
-                    <label class="col-4 col-md-3 text-center text-nowrap mb-36" for="name_eng">英文名</label>
-
-                    <div class="col-8 col-md-9 mb-36">
-                        <input class="form-control col-8 col-md-9" type="text" name="name_eng" placeholder="請輸入英文"
-                            id="name_eng">
-                    </div>
-
-
-
-
-                    <label class="col-4 col-md-3 text-center text-nowrap mb-36" for="gender">性別</label>
-
-                    <div class="col-8 col-md-9 mb-36">
-                        <div class="row px-12">
-
-                            <div class="form-check col-6 col-md-2">
-                                <input class="form-check-input" type="radio" name="gender" id="female">
-                                <label class="form-check-label" for="female">
-                                    女
-                                </label>
-                            </div>
-
-                            <div class="form-check col-6 col-md-2">
-                                <input class="form-check-input" type="radio" name="gender" id="male">
-                                <label class="form-check-label" for="male">
-                                    男
-                                </label>
-                            </div>
-
-                        </div>
-
-                    </div>
-
-
-
-
-
-                    <label class="col-4 col-md-3 text-center text-nowrap mb-36" for="identity_card">身分證</label>
-                    <div class="col-8 col-md-9 mb-36">
-                        <input class="form-control" type="text" name="identity_card" placeholder="請輸入英文及數字"
-                            id="identity_card">
-                    </div>
-
-
-
-                    <label class="col-4 col-md-3 text-center text-nowrap mb-36" for="birthday">出生日</label>
-
-                    <div class="col-8 col-md-9 mb-36">
-                        <input class="form-control" type="date" id="birthday" name="birthday">
-                    </div>
-
-
-
-
-                    <label class="col-4 col-md-3 text-center text-nowrap mb-36" for="address">地址</label>
-                    <div class="col-8 col-md-9 mb-36">
-                        <input class="form-control" type="text" name="address" placeholder="請輸入中文" id="address">
-                    </div>
-
-
-
-                    <label class="col-4 col-md-3 text-center text-nowrap mb-36" for="phone">PHONE</label>
-
-                    <div class="col-8 col-md-9 mb-36">
-                        <input class="form-control" type="tel" maxlength="10" oninput="value=value.replace(/[^\d]/g,'')"
-                            name="phone" placeholder="請輸入數字" id="phone">
-                    </div>
-
-
-
-
-
-                    <label class="col-4 col-md-3 text-center text-nowrap mb-36" for="mail">MAIL</label>
-                    <div class="col-8 col-md-9 mb-36">
-                        <input class="form-control" type="email" name="mail" placeholder="請輸入英文及數字" id="mail">
-                    </div>
-
-
-
-
-
-                    <label class="col-4 col-md-3 text-center text-nowrap mb-36" for="notice">飲食限制</label>
-                    <div class="col-8 col-md-9 mb-36">
-                        <textarea class="form-control" name="notice" id="notice" cols="30" rows="10">
-                        </textarea>
-                    </div>
-
-
-
-
-                    <label class="col-4 col-md-3 text-center text-nowrap mb-md-36" for="connection_name">緊急聯絡人姓名</label>
-                    <div class="col-12 d-md-none"></div>
-                    <div class="col-4 d-md-none"></div>
-                    <div class="col-8 col-md-9">
-                        <input class="form-control" type="text" name="connection_name" placeholder="請輸入中文"
-                            id="connection_name">
-                    </div>
-
-
-                    <label class="col-4 col-md-3 text-center text-nowrap mb-md-36"
-                        for="connection_phone">緊急聯絡人電話</label>
-
-                    <div class="col-12 d-md-none"></div>
-                    <div class="col-4 d-md-none"></div>
-                    <div class="col-8 col-md-9">
-                        <input class="form-control" type="text" maxlength="10"
-                            oninput="value=value.replace(/[^\d]/g,'')" name="connection_phone" placeholder="請輸入數字"
-                            id="connection_phone">
-                    </div>
-
-
-
-
-                    <label class="col-4 col-md-3 text-center text-nowrap mb-md-36" for="relationship">緊急聯絡人關係</label>
-
-                    <div class="col-12 d-md-none"></div>
-                    <div class="col-4 d-md-none"></div>
-                    <div class="col-8 col-md-9">
-                        <select class="form-select" name="relationship" id="relationship">
-                            <option selected>請選擇關係</option>
-                            <option value="father">父</option>
-                            <option value="mather">母</option>
-                            <option value="others">其他</option>
-                        </select>
-                    </div>
-
-
-
-
-                    <div class="row justify-content-center my-36 ">
-                        <div class="col-12 d-flex justify-content-center">
-                            <button class="btn btn-primary text-neutral-5 fw-bold" type="submit">確認</button>
-                        </div>
-                    </div>
-
-
+     
+                    </div>                    
                 </div>
-            </form>
+        </section>
 
-
-
-        </div>
+    </main>
 
 
         <div class="bg-primary-3">
@@ -348,9 +327,23 @@
         </div>
     </footer>
 </div>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script>
+      $('.needs-validation').each(function(index) {
+            var form = $(this);
+            form.on('submit', function(e) {
+                e.preventDefault();
+                form.addClass('was-validated');
 
+                if(form[0].checkValidity()){
+                    window.open("index.html");
+                } 
 
-            
+            });
+        });
+    </script>
+
+    
 
 </body>
 
