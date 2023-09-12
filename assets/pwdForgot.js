@@ -1,0 +1,1 @@
+import"./main.js";import"./header.js";import"./login2.js";const d=()=>{const o=document.querySelector(".modal-dialog");window.innerWidth<768?o.classList.add("modal-sm"):o.classList.remove("modal-sm")};d();window.addEventListener("resize",d);
