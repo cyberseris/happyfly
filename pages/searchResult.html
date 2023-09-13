@@ -6,11 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>searchResult</title>
-    <script type="module" src="../node_modules/jquery/dist/jquery.min.js"></script>
-    <script type="module" src="../node_modules/daterangepicker/moment.min.js"></script>
-    <script type="module" src="../node_modules/daterangepicker/daterangepicker.js"></script>
+    <script type="text/javascript" src="../node_modules/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="../node_modules/daterangepicker/moment.min.js"></script>
+    <script type="text/javascript" src="../node_modules/daterangepicker/daterangepicker.js"></script>
     <script type="module" src="../assets/scss/vendors/daterangepicker/index_date.js"></script>
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="../node_modules/aos/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -23,7 +23,7 @@
                 <section class="d-flex justify-content-center align-items-stetch pb-108 pt-172">
                     <div class="container">
                         <!-- title -->
-                        <div class="text-center" data-aos="fade-up">
+                        <div class="text-center">
                             <h2 class="fs-32 fw-bold">
                                 / 搜尋結果 /
                             </h2>
@@ -31,11 +31,12 @@
                         </div>
 
                         <!-- result -->
-                        <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 g-4" data-aos="fade-up" data-aos-duration="2000">
+                        <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 g-4">
                             <div class="col">
                                 <div class="card border border-1 h-100 position-initial">
                                     <div class="overflow-hidden">
-                                        <img src="../assets/images/image01.png" class="card-img-top img-hover" alt="image01">
+                                        <img src="../assets/images/image01.png" class="card-img-top img-hover"
+                                            alt="image01">
                                     </div>
                                     <div class="card-body">
                                         <h5 class="card-title">賽福瑞六人成行</h5>
@@ -50,7 +51,8 @@
                             <div class="col">
                                 <div class="card border border-1 h-100 position-initial">
                                     <div class="overflow-hidden">
-                                        <img src="../assets/images/image02.png" class="img-hover card-img-top" alt="image02">
+                                        <img src="../assets/images/image02.png" class="img-hover card-img-top"
+                                            alt="image02">
                                     </div>
                                     <div class="card-body">
                                         <h5 class="card-title">美麗海水族館.波上宮4日</h5>
@@ -65,7 +67,8 @@
                             <div class="col">
                                 <div class="card border border-1 h-100 position-initial">
                                     <div class="overflow-hidden">
-                                        <img src="../assets/images/image03.png" class="img-hover card-img-top" alt="image03">
+                                        <img src="../assets/images/image03.png" class="img-hover card-img-top"
+                                            alt="image03">
                                     </div>
                                     <div class="card-body">
                                         <h5 class="card-title">艾菲爾鐵塔景觀餐廳8日</h5>
@@ -80,7 +83,8 @@
                             <div class="col">
                                 <div class="card border border-1 h-100 position-initial">
                                     <div class="overflow-hidden">
-                                        <img src="../assets/images/image04.png" class="img-hover card-img-top" alt="image04">
+                                        <img src="../assets/images/image04.png" class="img-hover card-img-top"
+                                            alt="image04">
                                     </div>
                                     <div class="card-body">
                                         <h5 class="card-title">五星中越峴港</h5>
@@ -95,7 +99,8 @@
                             <div class="col">
                                 <div class="card border border-1 h-100 position-initial">
                                     <div class="overflow-hidden">
-                                        <img src="../assets/images/image05.png" class="img-hover card-img-top" alt="image05">
+                                        <img src="../assets/images/image05.png" class="img-hover card-img-top"
+                                            alt="image05">
                                     </div>
                                     <div class="card-body">
                                         <h5 class="card-title">賽福瑞六人成行</h5>
@@ -110,7 +115,8 @@
                             <div class="col">
                                 <div class="card border border-1 h-100 position-initial">
                                     <div class="overflow-hidden">
-                                        <img src="../assets/images/image06.png" class="img-hover card-img-top" alt="image06">
+                                        <img src="../assets/images/image06.png" class="img-hover card-img-top"
+                                            alt="image06">
                                     </div>
                                     <div class="card-body">
                                         <h5 class="card-title">美麗海水族館.波上宮4日</h5>
@@ -125,7 +131,8 @@
                             <div class="col">
                                 <div class="card border border-1 h-100 position-initial">
                                     <div class="overflow-hidden">
-                                        <img src="../assets/images/image07.png" class="img-hover card-img-top" alt="image07">
+                                        <img src="../assets/images/image07.png" class="img-hover card-img-top"
+                                            alt="image07">
                                     </div>
                                     <div class="card-body">
                                         <h5 class="card-title">艾菲爾鐵塔景觀餐廳8日</h5>
@@ -140,7 +147,8 @@
                             <div class="col">
                                 <div class="card border border-1 h-100 position-initial">
                                     <div class="overflow-hidden">
-                                        <img src="../assets/images/image08.png" class="img-hover card-img-top" alt="image08">
+                                        <img src="../assets/images/image08.png" class="img-hover card-img-top"
+                                            alt="image08">
                                     </div>
                                     <div class="card-body">
                                         <h5 class="card-title">五星中越峴港</h5>
@@ -178,8 +186,7 @@
         <%- include('./layout/footer'); -%>
             <script type="module" src="../main.js"></script>
             <script type="module" src="../assets/js/bannerSearch.js"></script>
-            <!-- <script type="module" src="../assets/scss/vendors/swiper/_swiper.js"></script> -->
-            <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+            <script src="../node_modules/aos/dist/aos.js"></script>
 </body>
 
 </html>

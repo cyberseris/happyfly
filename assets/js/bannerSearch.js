@@ -15,10 +15,10 @@ list.addEventListener('click', (e) => {
                 none.toggle('d-block');
 
                 let single_content = document.querySelector(`.js-content[data-target="${content_id}"]`);
-                console.log(single_content);
+                
                 single_content.addEventListener('click', (e) => {
                     let val = e.target.getAttribute('data-val');
-                    console.log(val);
+                    
                     if ((id == content_id)) {
                         let click_id = document.querySelector(`input[id="${id}"]`);
                         console.log(click_id.value);
@@ -29,7 +29,3 @@ list.addEventListener('click', (e) => {
         }
     }
 });
-
-
-
-

@@ -6,12 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>index</title>
-  <script type="module" src="../node_modules/jquery/dist/jquery.min.js"></script>
-  <script type="module" src="../node_modules/daterangepicker/moment.min.js"></script>
-  <script type="module" src="../node_modules/daterangepicker/daterangepicker.js"></script>
+  <script type="text/javascript" src="../node_modules/jquery/dist/jquery.min.js"></script>
+  <script type="text/javascript" src="../node_modules/daterangepicker/moment.min.js"></script>
+  <script type="text/javascript" src="../node_modules/daterangepicker/daterangepicker.js"></script>
   <script type="module" src="../assets/scss/vendors/daterangepicker/index_date.js"></script>
-  <!-- <script type="module" src="../assets/scss/vendors/swiper/swiper.js"></script> -->
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link href="../node_modules/aos/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -23,7 +22,7 @@
         <!-- 焦點 -->
         <section class="d-flex justify-content-center align-items-stetch bg-left-linear pb-108 pt-172">
           <div class="container">
-            <div class="row g-4" data-aos="fade-up">
+            <div class="row g-4">
               <!-- title -->
               <div class="col-sm-1 col-lg-1">
                 <h2 class="fs-32 fw-bold writing-vertical">
@@ -46,16 +45,16 @@
               </div>
               <!-- right -->
               <div class="col-sm-1 col-lg-5">
-                <div class="row g-3">
+                <div class="row g-5">
                   <!-- top -->
-                  <div class="col-6 col-md-5">
+                  <div class="col-6 col-md-5 mb-16 mt-16 mt-lg-0">
                     <a href="itineraryDetail.html">
                       <div class="overflow-hidden">
                         <img src="../assets/images/imageFocus02.png" class="img-fluid rounded img-hover" alt="imageFocus02 ">
                       </div>
                     </a>
                   </div>
-                  <div class="col-6 col-md-7">
+                  <div class="col-6 col-md-7 mb-16 mt-16 mt-lg-0">
                     <a href="itineraryDetail.html">
                       <h4 class="fs-24 fw-sm-20">輕鬆遊曼谷五日</h4>
                       <h5 class="fs-20 fw-sm-16">海上郵輪餐廳釣墨魚</h5>
@@ -64,14 +63,14 @@
                     </a>
                   </div>
                   <!-- middle -->
-                  <div class="col-6 col-md-5">
+                  <div class="col-6 col-md-5  mb-16">
                     <a href="itineraryDetail.html">
                       <div class="overflow-hidden">
                         <img src="../assets/images/imageFocus03.png" class="img-fluid rounded img-hover" alt="imageFocus03 ">
                       </div>
                     </a>
                   </div>
-                  <div class="col-6 col-md-7">
+                  <div class="col-6 col-md-7  mb-16">
                     <a href="itineraryDetail.html">
                       <h4 class="fs-24 fw-sm-20">峇里風情六人成行</h4>
                       <h5 class="fs-20 fw-sm-16">烏布閒情旅行、山林田野泛舟</h5>
@@ -661,9 +660,9 @@
 
     <%- include('./layout/footer'); -%>
       <script type="module" src="../main.js"></script>
-      <script type="module" src="../assets/js/bannerSearch.js">
+      <script src="../assets/js/bannerSearch.js">
       </script>
-      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <script src="../node_modules/aos/dist/aos.js"></script>
 </body>
 
 </html>
