@@ -1,0 +1,1 @@
+import"./main.js";import"./header.js";(function(){var a=document.querySelectorAll(".needs-validation");Array.prototype.slice.call(a).forEach(function(t){t.addEventListener("submit",function(e){return t.checkValidity()==!0?!0:(e.preventDefault(),e.stopPropagation(),t.classList.add("was-validated"),!1)},!1)})})();

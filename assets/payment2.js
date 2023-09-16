@@ -1,1 +1,0 @@
-(function(){var a=document.querySelectorAll(".needs-validation");Array.prototype.slice.call(a).forEach(function(e){e.addEventListener("submit",function(t){return e.checkValidity()==!0?!0:(t.preventDefault(),t.stopPropagation(),e.classList.add("was-validated"),!1)},!1)})})();

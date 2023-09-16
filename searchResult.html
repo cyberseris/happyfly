@@ -6,9 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>searchResult</title>
-    
-    
-    
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
     
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <script type="module" crossorigin src="/happyfly/assets/main.js"></script>
@@ -174,11 +174,11 @@
             <!-- 出發地 -->
             <div class=" form-floating w-custom-50 me-12 me-md-24">
                 <input type="text" class="form-control input-bg-down" id="outset" placeholder="請選擇" value="請選擇">
-                <label for="outset" class="text-dark ">出發地</label>
+                <label for="outset" class="text-dark">出發地</label>
 
                 <div class="position-relative input-bg-down-content js-content w-custom-150 w-custom-sm-100"
-                    data-target="outset">
-                    <div class="position-absolute z-index-1 bg-white border border-1 rounded p-16">
+                    data-target="outset" >
+                    <div class="input-bg-down-content-item bg-white border border-1 rounded p-16">
                         <ul class="nav nav-pills  nav-tab-border tabs-hover mb-16" id="pills-tab" role="tablist">
                             <li class="nav-item" role="presentation">
                                 <button class="nav-link active" id="pills-1-tab" data-bs-toggle="pill"
@@ -264,7 +264,7 @@
 
                 <div class="position-relative input-bg-down-content js-content w-custom-150 w-custom-sm-100"
                     data-target="destination">
-                    <div class="position-absolute z-index-1 bg-white border border-1 rounded p-16">
+                    <div class="input-bg-down-content-item bg-white border border-1 rounded p-16">
                         <ul class="nav nav-pills  nav-tab-border tabs-hover mb-16" id="pills-tab" role="tablist">
                             <li class="nav-item" role="presentation">
                                 <button class="nav-link active" id="pills-3-tab" data-bs-toggle="pill"
@@ -370,7 +370,7 @@
                 <section class="d-flex justify-content-center align-items-stetch pb-108 pt-172">
                     <div class="container">
                         <!-- title -->
-                        <div class="text-center" data-aos="fade-up">
+                        <div class="text-center">
                             <h2 class="fs-32 fw-bold">
                                 / 搜尋結果 /
                             </h2>
@@ -378,11 +378,12 @@
                         </div>
 
                         <!-- result -->
-                        <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 g-4" data-aos="fade-up" data-aos-duration="2000">
+                        <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 g-4">
                             <div class="col">
                                 <div class="card border border-1 h-100 position-initial">
                                     <div class="overflow-hidden">
-                                        <img src="/happyfly/assets/image01.png" class="card-img-top img-hover" alt="image01">
+                                        <img src="/happyfly/assets/image01.png" class="card-img-top img-hover"
+                                            alt="image01">
                                     </div>
                                     <div class="card-body">
                                         <h5 class="card-title">賽福瑞六人成行</h5>
@@ -397,7 +398,8 @@
                             <div class="col">
                                 <div class="card border border-1 h-100 position-initial">
                                     <div class="overflow-hidden">
-                                        <img src="/happyfly/assets/image02.png" class="img-hover card-img-top" alt="image02">
+                                        <img src="/happyfly/assets/image02.png" class="img-hover card-img-top"
+                                            alt="image02">
                                     </div>
                                     <div class="card-body">
                                         <h5 class="card-title">美麗海水族館.波上宮4日</h5>
@@ -412,7 +414,8 @@
                             <div class="col">
                                 <div class="card border border-1 h-100 position-initial">
                                     <div class="overflow-hidden">
-                                        <img src="/happyfly/assets/image03.png" class="img-hover card-img-top" alt="image03">
+                                        <img src="/happyfly/assets/image03.png" class="img-hover card-img-top"
+                                            alt="image03">
                                     </div>
                                     <div class="card-body">
                                         <h5 class="card-title">艾菲爾鐵塔景觀餐廳8日</h5>
@@ -427,7 +430,8 @@
                             <div class="col">
                                 <div class="card border border-1 h-100 position-initial">
                                     <div class="overflow-hidden">
-                                        <img src="/happyfly/assets/image04.png" class="img-hover card-img-top" alt="image04">
+                                        <img src="/happyfly/assets/image04.png" class="img-hover card-img-top"
+                                            alt="image04">
                                     </div>
                                     <div class="card-body">
                                         <h5 class="card-title">五星中越峴港</h5>
@@ -442,7 +446,8 @@
                             <div class="col">
                                 <div class="card border border-1 h-100 position-initial">
                                     <div class="overflow-hidden">
-                                        <img src="/happyfly/assets/image05.png" class="img-hover card-img-top" alt="image05">
+                                        <img src="/happyfly/assets/image05.png" class="img-hover card-img-top"
+                                            alt="image05">
                                     </div>
                                     <div class="card-body">
                                         <h5 class="card-title">賽福瑞六人成行</h5>
@@ -457,7 +462,8 @@
                             <div class="col">
                                 <div class="card border border-1 h-100 position-initial">
                                     <div class="overflow-hidden">
-                                        <img src="/happyfly/assets/image06.png" class="img-hover card-img-top" alt="image06">
+                                        <img src="/happyfly/assets/image06.png" class="img-hover card-img-top"
+                                            alt="image06">
                                     </div>
                                     <div class="card-body">
                                         <h5 class="card-title">美麗海水族館.波上宮4日</h5>
@@ -472,7 +478,8 @@
                             <div class="col">
                                 <div class="card border border-1 h-100 position-initial">
                                     <div class="overflow-hidden">
-                                        <img src="/happyfly/assets/image07.png" class="img-hover card-img-top" alt="image07">
+                                        <img src="/happyfly/assets/image07.png" class="img-hover card-img-top"
+                                            alt="image07">
                                     </div>
                                     <div class="card-body">
                                         <h5 class="card-title">艾菲爾鐵塔景觀餐廳8日</h5>
@@ -487,7 +494,8 @@
                             <div class="col">
                                 <div class="card border border-1 h-100 position-initial">
                                     <div class="overflow-hidden">
-                                        <img src="/happyfly/assets/image08.png" class="img-hover card-img-top" alt="image08">
+                                        <img src="/happyfly/assets/image08.png" class="img-hover card-img-top"
+                                            alt="image08">
                                     </div>
                                     <div class="card-body">
                                         <h5 class="card-title">五星中越峴港</h5>
@@ -547,7 +555,6 @@
     </footer>
 </div>            
             
-            <!-- <script type="module" src="../assets/scss/vendors/swiper/_swiper.js"></script> -->
             <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </body>
 
