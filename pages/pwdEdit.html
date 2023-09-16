@@ -73,9 +73,92 @@
                             </div>
                           </div>
                         </div>
-  
                         
-                        <div class="d-flex justify-content-center pt-16 pb-16"><button type="submit" src="member.html" class="btn btn-lg btn-primary text-white me-16">修改密碼</button><button type="reset" class="btn btn-lg btn-primary text-white">清除</button></div> 
+                        <div class="d-flex justify-content-center pt-16 pb-16"><button type="submit" src="member.html" class="btn btn-lg btn-primary text-white me-16">修改密碼</button>
+
+                        <div class="modal fade" id="editModal1" tabindex="-1"
+                                                aria-labelledby="editModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-body">
+                                        <div class="container-fluid">
+                                            <div class="row">
+                                                <div class="col-1 ms-auto">
+                                                    <button type="button" class="btn-close"
+                                                        data-bs-dismiss="modal"
+                                                        aria-label="Close">
+                                                    </button>
+                                                </div>
+                                                <div class="col-12">
+                                                    <div class="d-flex justify-content-center">
+                                                        <div class="d-flex justify-content-center align-items-center bg-primary-2 success-icon">
+                                                            <span
+                                                                class="material-symbols-outlined">
+                                                                Done
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <h2 class="text-center my-12 my-md-24 success-text">成功</h2>
+                                                <div class="col-8 m-auto mb-12 mb-md-24">
+                                                    <div class="d-flex justify-content-around">
+                                                      <button type="button" id="ok" class="btn btn-primary text-neutral-5 lead-index d-block text-center mx-4">確定</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal fade" id="editModal2" tabindex="-1"
+                                                aria-labelledby="editModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-body">
+                                        <div class="container-fluid">
+                                            <div class="row">
+                                                <div class="col-1 ms-auto">
+                                                    <button type="button" class="btn-close"
+                                                        data-bs-dismiss="modal"
+                                                        aria-label="Close">
+                                                    </button>
+                                                </div>
+                                                <div class="col-12">
+                                                    <div class="d-flex justify-content-center">
+                                                        <div class="d-flex justify-content-center align-items-center pink fail-icon">
+                                                            <span
+                                                                class="material-symbols-outlined">
+                                                                Close
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <h2 class="text-center my-12 my-md-24 fail-text">失敗</h2>
+                                                <div class="col-8 m-auto mb-12 mb-md-24">
+                                                    <div class="d-flex justify-content-around">
+                                                      <button type="button" id="ok2" class="btn btn-primary text-neutral-5 lead-index d-block text-center mx-4">確定</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                          
+                          <button type="reset" class="btn btn-lg btn-primary text-white">清除</button></div>
+                        
                       </form>                    
                 </div>
             </div>
@@ -89,11 +172,33 @@
             form.on('submit', function(e) {
                 e.preventDefault();
                 form.addClass('was-validated');
+                
+                if (form[0].checkValidity()) {
+                  $("#editModal1").modal("show");
 
-                if(form[0].checkValidity()){
-                    window.open("member.html");
-                } 
+                  $("#ok").click(function(){
+                      $("#editModal1").modal("hide");
+                   }
+                  );
 
+                  setTimeout(function(){
+                    $("#editModal1").modal("hide");
+                  },5000);
+                  /* setTimeout(function(){
+                    window.location.href = "orderList.html";
+                  },3000); */
+                } else {
+                  $("#editModal2").modal("show");
+
+                  $("#ok2").click(function(){
+                      $("#editModal2").modal("hide");
+                   }
+                  ); 
+
+                  setTimeout(function(){
+                    $("#editModal2").modal("hide");
+                  },5000);
+                }
             });
         });
     </script>

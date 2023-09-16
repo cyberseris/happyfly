@@ -18,13 +18,20 @@
                     <%- include('./layout/sideBar') -%>
                 </div>
 
-                <div class="memberInfo w-100 d-flex flex-column justify-content-center align-items-center">
+                <div class="w-100 d-flex flex-column justify-content-center align-items-center">
                     <h1 class="fs-32 mb-24 mt-32 w-100 text-center fw-bold">會員資料修改</h1>  
 
                     <form action="#" class="mt-20 needs-validation bg-transparent w-100 w-md-50" novalidate data-aos="fade-up" data-aos-duration="1000">
                       <div class="row mb-0 mb-md-32">
-                        <div class="col-12 col-md-3 text-center mb-16 mb-md-0 d-flex justify-content-center align-items-center">
-                          <img src="../assets/images/image01.png" class="img-fluid rounded-circle w-px-90 h-px-90" alt="member">
+                        <div class="profile col-12 col-md-3 text-center mb-16 mb-md-0 d-flex justify-content-center align-items-center">
+                          <div class="profile-pic"><img src="../assets/images/image01.png" class=" img-fluid rounded-circle w-px-90 h-px-90 " alt="member">
+                            <div class="p-image d-flex justify-content-center align-items-center">
+                              <i class="fa fa-camera upload-button"></i>
+                              <input class="file-upload" type="file" accept="image/*"/>
+                          </div>
+                          </div>
+                          
+
                         </div>
 
                         <div class="col-12 col-md-9">
@@ -98,8 +105,8 @@
                       </div>
 
                       <div class="row mb-16">
-                        <label for="emergencyName" class="col-4 col-md-3 form-label input-group-text border-0 bg-transparent fs-16 fs-md-18">緊急聯絡姓名</label>
-                        <div class="col-8 col-md-9">
+                        <label for="emergencyName" class="col-4 col-md-4 form-label input-group-text border-0 bg-transparent fs-16 fs-md-18">緊急聯絡姓名</label>
+                        <div class="col-8 col-md-8">
                           <div class="input-group">
                             <input type="text" class="form-control" placeholder="請輸入緊急聯絡姓名" aria-label="emergencyName" id="emergencyName" required>
                             <span id="emergencyNameFeedback" class="invalid-feedback">請輸入緊急聯絡姓名</span>
@@ -108,8 +115,8 @@
                       </div>
 
                       <div class="row mb-16">
-                        <label for="emergencyTel" class="col-4 col-md-3 form-label input-group-text border-0 bg-transparent fs-16 fs-md-18">緊急聯絡電話</label>
-                        <div class="col-8 col-md-9">
+                        <label for="emergencyTel" class="col-4 col-md-4 form-label input-group-text border-0 bg-transparent fs-16 fs-md-18">緊急聯絡電話</label>
+                        <div class="col-8 col-md-8">
                           <div class="input-group">
                             <input type="text" class="form-control" placeholder="請輸入緊急聯絡電話" aria-label="emergencyTel" id="emergencyTel" required>
                             <span id="emergencyTelFeedback" class="invalid-feedback">請輸入緊急聯絡電話</span>
@@ -118,8 +125,8 @@
                       </div>
                       
                       <div class="row mb-16">
-                        <label for="emergencyRelation" class="col-4 col-md-3 form-label input-group-text border-0 bg-transparent flex-wrap fs-16 fs-md-18">緊急聯絡關係</label>
-                          <div class="col-8 col-md-9">
+                        <label for="emergencyRelation" class="col-4 col-md-4 form-label input-group-text border-0 bg-transparent flex-wrap fs-16 fs-md-18">緊急聯絡關係</label>
+                          <div class="col-8 col-md-8">
                               <div class="input-group">
                                   <select class="form-select" aria-label="緊急聯絡關係" required>
                                       <option selected disabled value="EX:母女關係">EX:母女關係</option>
@@ -133,7 +140,90 @@
                               </div>
                           </div>
                       </div>
-                      <div class="d-flex justify-content-center pt-16 pb-16"><button type="submit" class="btn btn-lg btn-primary text-white me-16">修改資料</button><button type="reset" class="btn btn-lg btn-primary text-white">清除</button></div> 
+                      <div class="d-flex justify-content-center pt-16 pb-16">
+                        <button type="submit" class="btn btn-lg btn-primary text-white me-16 btnEdit" data-bs-toggle="modal" data-bs-backdrop="static">修改資料</button>
+
+                        <div class="modal fade" id="editModal1" tabindex="-1"
+                                                aria-labelledby="editModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-body">
+                                        <div class="container-fluid">
+                                            <div class="row">
+                                                <div class="col-1 ms-auto">
+                                                    <button type="button" class="btn-close"
+                                                        data-bs-dismiss="modal"
+                                                        aria-label="Close">
+                                                    </button>
+                                                </div>
+                                                <div class="col-12">
+                                                    <div class="d-flex justify-content-center">
+                                                        <div class="d-flex justify-content-center align-items-center bg-primary-2 success-icon">
+                                                            <span
+                                                                class="material-symbols-outlined">
+                                                                Done
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <h2 class="text-center my-12 my-md-24 success-text">修改成功</h2>
+                                                <div class="col-8 m-auto mb-12 mb-md-24">
+                                                    <div class="d-flex justify-content-around">
+                                                      <div class="d-flex justify-content-around">
+                                                        <button type="button" id="ok" class="btn btn-primary text-neutral-5 lead-index d-block text-center mx-4">確定</button>
+                                                    </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal fade" id="editModal2" tabindex="-1"
+                                                aria-labelledby="editModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-body">
+                                        <div class="container-fluid">
+                                            <div class="row">
+                                                <div class="col-1 ms-auto">
+                                                    <button type="button" class="btn-close"
+                                                        data-bs-dismiss="modal"
+                                                        aria-label="Close">
+                                                    </button>
+                                                </div>
+                                                <div class="col-12">
+                                                    <div class="d-flex justify-content-center">
+                                                        <div class="d-flex justify-content-center align-items-center pink fail-icon">
+                                                            <span
+                                                                class="material-symbols-outlined">
+                                                                Close
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <h2 class="text-center my-12 my-md-24 fail-text">修改失敗</h2>
+                                                <div class="col-8 m-auto mb-12 mb-md-24">
+                                                  <div class="d-flex justify-content-around">
+                                                    <button type="button" id="ok2" class="btn btn-primary text-neutral-5 lead-index d-block text-center mx-4">確定</button>
+                                                  </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button type="reset" class="btn btn-lg btn-primary text-white">清除</button>
+                      </div> 
                     </form>                    
                 </div>
             </div>
@@ -147,15 +237,63 @@
             form.on('submit', function(e) {
                 e.preventDefault();
                 form.addClass('was-validated');
+                
+                if (form[0].checkValidity()) {
+                  $("#editModal1").modal("show");
 
-                if(form[0].checkValidity()){
-                    window.open("index.html");
-                } 
+                  $("#ok").click(function(){
+                      $("#editModal1").modal("hide");
+                   }
+                  );
 
+                  setTimeout(function(){
+                    $("#editModal1").modal("hide");
+                  },5000);
+                  /* setTimeout(function(){
+                    window.location.href = "orderList.html";
+                  },3000); */
+                } else {
+                  $("#editModal2").modal("show");
+
+                  $("#ok2").click(function(){
+                      $("#editModal2").modal("hide");
+                   }
+                  ); 
+
+                  setTimeout(function(){
+                    $("#editModal2").modal("hide");
+                  },5000);
+                }
             });
         });
     </script>
+    
+    <script>
+          $(document).ready(function() {
 
+          
+          var readURL = function(input) {
+              if (input.files && input.files[0]) {
+                  var reader = new FileReader();
+
+                  reader.onload = function (e) {
+                      $('.profile-pic').attr('src', e.target.result);
+                  }
+
+                  reader.readAsDataURL(input.files[0]);
+              }
+          }
+
+
+          $(".file-upload").on('change', function(){
+              readURL(this);
+          });
+
+          $(".upload-button").on('click', function() {
+          $(".file-upload").click();
+          });
+          });
+      </script>
     <%- include('./layout/footer'); -%>
 </body>
 </html>

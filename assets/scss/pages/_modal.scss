@@ -25,6 +25,33 @@
     }
 }
 
+.fail-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+
+    @media (min-width: 768px) {
+        width: 120px;
+        height: 120px;
+    }
+
+    span {
+        font-size: 32px;
+
+        @media (min-width: 768px) {
+            font-size: 64px;
+        }
+    }
+}
+
+.fail-text {
+    font-size: 16px;
+
+    @media (min-width: 768px) {
+        font-size: 32px;
+    }
+}
+
 .lead {
 
     &-index,

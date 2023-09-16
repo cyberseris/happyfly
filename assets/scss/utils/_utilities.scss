@@ -145,3 +145,46 @@ $utilities: map-merge(("font-size": (rfs: false,
     transform: scale(1.2);
   }
 }
+
+.pink {
+  background: pink;
+}
+
+.profile {
+  .profile-pic {
+    position: relative !important;
+  }
+
+
+  .p-image {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    position: absolute !important;
+    top: 60px;
+    right: -10px;
+    color: #666666;
+    background: $white;
+    transition: all .3s cubic-bezier(.175, .885, .32, 1.275);
+  }
+
+  .p-image:hover {
+    transition: all .3s cubic-bezier(.175, .885, .32, 1.275);
+  }
+}
+
+
+
+.file-upload {
+  display: none;
+}
+
+
+.upload-button {
+  font-size: 1.2em;
+}
+
+.upload-button:hover {
+  transition: all .3s cubic-bezier(.175, .885, .32, 1.275);
+  color: #999;
+}

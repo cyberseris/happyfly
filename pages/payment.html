@@ -9,6 +9,10 @@
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+        
+    <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
 </head>
 
 <body>
@@ -163,19 +167,19 @@
                                                         <div class="modal-body py-28">
 
                                                             <a href="paymentInfo.html"
-                                                                class="btn bg-primary-3 d-flex justify-content-center align-items-center btn-hover1 rounded-pill fs-20 text-white">
+                                                                class="btn bg-primary-3 d-flex justify-content-center align-items-center btn-hover1 rounded-pill fs-20 text-white" target="_blank">
                                                                 <span class="material-symbols-outlined fs-20">
                                                                     credit_card
                                                                 </span>ATM轉帳/匯款
                                                             </a>
                                                             <a href="paymentInfo.html"
-                                                                class="btn bg-primary-3 d-flex justify-content-center align-items-center btn-hover1 rounded-pill fs-20 text-white mt-24">
+                                                                class="btn bg-primary-3 d-flex justify-content-center align-items-center btn-hover1 rounded-pill fs-20 text-white mt-24" target="_blank">
                                                                 <span class="material-symbols-outlined fs-20">
                                                                     credit_card
                                                                 </span>外幣匯款帳號
                                                             </a>
                                                             <a href="paymentInfo.html"
-                                                                class="btn bg-primary-3 d-flex justify-content-center align-items-center btn-hover1 rounded-pill fs-20 text-white mt-24">
+                                                                class="btn bg-primary-3 d-flex justify-content-center align-items-center btn-hover1 rounded-pill fs-20 text-white mt-24" target="_blank">
                                                                 <span class="material-symbols-outlined fs-20">
                                                                     credit_card
                                                                 </span>SSL線上刷卡
@@ -233,6 +237,90 @@
                                 </div>
                                 <div class="d-flex justify-content-center align-items-center">
                                     <button class="btn bg-light btn-hover1 me-16" type="submit">確定</button>
+
+                                    <div class="modal fade" id="submitModal1" tabindex="-1"
+                            aria-labelledby="submitModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-body">
+                                            <div class="container-fluid">
+                                                <div class="row">
+                                                    <div class="col-1 ms-auto">
+                                                        <button type="button" class="btn-close"
+                                                            data-bs-dismiss="modal"
+                                                            aria-label="Close">
+                                                        </button>
+                                                    </div>
+                                                    <div class="col-12">
+                                                        <div class="d-flex justify-content-center">
+                                                            <div class="d-flex justify-content-center align-items-center bg-primary-2 success-icon">
+                                                                <span
+                                                                    class="material-symbols-outlined">
+                                                                    Done
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <h2 class="text-center my-12 my-md-24 success-text">填寫成功</h2>
+                                                    <div class="col-8 m-auto mb-12 mb-md-24">
+                                                        <div class="d-flex justify-content-around">
+                                                            <button type="button" id="ok" class="btn btn-primary text-neutral-5 lead-index d-block text-center mx-4">前往會員中心</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal fade" id="submitModal2" tabindex="-1"
+                                                    aria-labelledby="submitModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-body">
+                                            <div class="container-fluid">
+                                                <div class="row">
+                                                    <div class="col-1 ms-auto">
+                                                        <button type="button" class="btn-close"
+                                                            data-bs-dismiss="modal"
+                                                            aria-label="Close">
+                                                        </button>
+                                                    </div>
+                                                    <div class="col-12">
+                                                        <div class="d-flex justify-content-center">
+                                                            <div class="d-flex justify-content-center align-items-center pink fail-icon">
+                                                                <span
+                                                                    class="material-symbols-outlined">
+                                                                    Close
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <h2 class="text-center my-12 my-md-24 fail-text">填寫失敗</h2>
+                                                    <div class="col-8 m-auto mb-12 mb-md-24">
+                                                        <div class="d-flex justify-content-around">
+                                                            <div class="d-flex justify-content-around">
+                                                                <button type="button" id="ok2" class="btn btn-primary text-neutral-5 lead-index d-block text-center mx-4">確定</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
                                     <button class="btn bg-light btn-hover1 me-16" type="reset">清除</button>
                                 </div>
                             </form>
@@ -245,7 +333,55 @@
         <%- include('./layout/footer'); -%>
             <script type="module" src="../main.js"></script>
             <script type="module" src="../assets/js/payment.js"></script>
+
+
+            <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
             <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+            <script>
+            $('.needs-validation').each(function(index) {
+                    var form = $(this);
+                    form.on('submit', function(e) {
+                        e.preventDefault();
+                        form.addClass('was-validated');
+                        
+                        if (form[0].checkValidity()) {
+                        $("#submitModal1").modal("show");
+
+                        $("#ok").click(function(){
+                            $("#submitModal1").modal("hide");
+                            }
+                        );
+
+                        setTimeout(function(){
+                            $("#submitModal1").modal("hide");
+                        },5000);
+                        /* setTimeout(function(){
+                            window.location.href = "orderList.html";
+                        },3000); */
+                        } else {
+                        $("#submitModal2").modal("show");
+
+                        $("#ok2").click(function(){
+                            $("#submitModal2").modal("hide");
+                            }
+                        ); 
+
+                        /*  $("#ok2").click(function(){
+                            var clickedButton = $(this);
+                            var modal = clickedButton.closest(".modal");
+                            modal.modal("hide");
+                            }) */
+
+                        setTimeout(function(){
+                            $("#submitModal2").modal("hide");
+                        },5000);
+                        }
+                    });
+                });
+            </script>
+
+            
 </body>
 
 </html>
