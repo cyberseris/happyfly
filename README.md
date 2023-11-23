@@ -1,5 +1,8 @@
 # Happy Fly 旅遊行程預約系統
 
+# 網址
+https://cyberseris.github.io/happyfly/
+
 ## Node.js 版本
   - 專案的 Node.js 版本需為 v16 以上
   - 查看自己版本指令：`node -v`
